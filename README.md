@@ -1,4 +1,4 @@
-# web
-Personal website - kaustubhhiware.in
+# pro
+Professional website, no gimmicks - kaustubhhiware.in
 
-Currently a WIP react page, will update later
+ToDo: Make gimmicky website
