@@ -1,6 +1,6 @@
 {
-  "name": "website_v5",
-  "homepage": "https://kaustubhhiware.github.io",
+  "name": "pro",
+  "homepage": "https://kaustubhhiware.in",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,6 @@
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-preloaders": "^3.0.3",
-    "react-reveal": "^1.2.2",
     "react-scripts": "3.3.0"
   },
   "scripts": {
