@@ -81,9 +81,9 @@
 }
 
 .dark-theme{
-  --background-color:var(--mid-blue);
+  --background-color:var(--dark-blue);
   --text-color: white;
-  --shadow-color: var(--dark-blue);
+  --shadow-color: var(--mid-blue);
 
   --dark-brown: #C19F6F;
   --light-brown: #D9D1BA;

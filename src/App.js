@@ -32,8 +32,8 @@ function App() {
     </CustomPreloader>
     
     <header className="App-header">
-    <Row id="superset" className="light-theme" fluid style={{
-      backgroundImage: `url(${Sakura})`,
+    <Row id="superset" className="dark-theme" fluid style={{
+      backgroundImage: `url(${Waves})`,
       }}>
         <Placard/>
         <Content/>
