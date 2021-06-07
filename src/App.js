@@ -3,10 +3,23 @@ import preloadergif from './images/quote.gif';
 import { CustomPreloader } from 'react-preloaders';
 import './App.css';
 import { Container, Row } from 'react-bootstrap';
+import Sakura from './images/sakura.jpg';
+import Waves from './images/waves.jpg';
 
 import Placard from './components/placard';
 import Content from './components/content';
 
+  let theme = 'light-theme';
+
+// const toggleThemes = () => {
+//     if (theme === 'light-theme') {
+//       changeTheme('dark-theme');
+//       theme = 'dark-theme';
+//     } else {
+//       changeTheme('light-theme');
+//       theme = 'light-theme'
+//     }
+//   }
 
 function App() {
   return (
@@ -17,10 +30,12 @@ function App() {
     </CustomPreloader>
     
     <header className="App-header">
-    <Container className="container">
+    <Container id="container" className="light-theme"  style={{
+      backgroundImage: `url(${Sakura})`,
+      }}>
       <Row>
-        <Placard />
-        <Content />
+        <Placard/>
+        <Content/>
       </Row>
     </Container>
     </header>

@@ -1,22 +1,27 @@
 .sidecard {
-  background-color: #468DC9;
+  background-color: var(--background-color);
+  color: var(--text-color);
   align-items: center;
   text-align: center;
-  display: inline-block;
+
+  border: 1px solid var(--shadow-color);
+  box-shadow: 10px 10px var(--shadow-color);
 
   padding: 5%; /* ToDo: mobile friendly */
   width: 20%; /* ToDo: check for mobile later */
 }
 
 .content {
-  background-color: #468DC9;
+  background-color: var(--background-color);
+  color: var(--text-color);
   display: inline-block;
   align-items: center;
   text-align: center;
+  
+  border: 1px solid var(--shadow-color);
+  box-shadow: 10px 10px var(--shadow-color);
 
   padding: 5vh;
-  margin-top: -200vh !important;
-  margin-left: 30vh !important;
 
 }
 
