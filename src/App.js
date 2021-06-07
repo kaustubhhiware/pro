@@ -2,9 +2,11 @@ import React from 'react';
 import preloadergif from './images/quote.gif';
 import { CustomPreloader } from 'react-preloaders';
 import './App.css';
-import { Container, Row } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { Row } from 'react-bootstrap';
 import Sakura from './images/sakura.jpg';
-import Waves from './images/waves.jpg';
+import Waves from './images/Waves.jpg';
 
 import Placard from './components/placard';
 import Content from './components/content';
@@ -30,14 +32,12 @@ function App() {
     </CustomPreloader>
     
     <header className="App-header">
-    <Container id="container" className="light-theme"  style={{
+    <Row id="superset" className="light-theme" fluid style={{
       backgroundImage: `url(${Sakura})`,
       }}>
-      <Row>
         <Placard/>
         <Content/>
-      </Row>
-    </Container>
+    </Row>
     </header>
     
     </div>

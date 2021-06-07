@@ -39,20 +39,32 @@
   width: 100%;
 }
 
-#container {
+#superset {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 
   min-height: 100vh;
+  margin: 0;
 
   padding-top: 10vh;
-  padding-left: 30vh;
+  padding-left: 0;
   text-align: initial;
+
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
+
+@media (min-width: 978px) {
+#superset {
+  padding-left: 30vh;
+  padding-right: 10vh;
+}
+
+}
+
 
 .light-theme{
   --background-color: var(--pink-1);
@@ -69,9 +81,9 @@
 }
 
 .dark-theme{
-  --background-color:var(--dark-blue);
+  --background-color:var(--mid-blue);
   --text-color: white;
-  --shadow-color: var(--mid-blue);
+  --shadow-color: var(--dark-blue);
 
   --dark-brown: #C19F6F;
   --light-brown: #D9D1BA;
