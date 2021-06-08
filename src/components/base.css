@@ -124,6 +124,12 @@ a:hover {
 }
 
 @media (min-width: 978px) {
+  .sidecard {
+    position:sticky;
+    top: 2em;
+    width: 100%;
+  }
+
   .social a {
     font-size: 0.7em;
   }
