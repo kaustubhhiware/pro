@@ -42,14 +42,41 @@
 .content-card {
   background-color: var(--background-color);
   color: var(--text-color);
-  align-items: center;
-  text-align: center;
-  
   box-shadow: 10px 10px var(--shadow-color);
   
-  padding: 5vh;
-  margin-bottom: 1em;
-  
+  padding: 4vh 2vh;
+  margin-bottom: 0.8em;
+  font-size: 1em;
+}
+
+.content-card-title {
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 0.5em;
+}
+
+.content-card-content {
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+.content-card-content a {
+  color: var(--text-color);
+}
+
+.content-card-subtitle {
+  font-size: 0.8em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+.paper-list {
+  margin-bottom: 1.5em;
+}
+
+.paper-link {
+  font-size: 0.8em;
 }
 
 .placard-image {
@@ -59,17 +86,16 @@
 
 .placard-title {
   padding-top: 1em;
+  font-size: 2em;
   font-weight: bolder;
 }
 
 .placard-role {
   margin-top: 0.25em;
-  font-size: 0.8em;
 }
 
 .placard-location {
   margin-top: 0.25em;
-  font-size: 0.6em;
   font-weight: bold;
 }
 
@@ -84,8 +110,13 @@
 
 .social a{
   color: var(--text-color);
-  margin-right: 1em;
+  margin-right: 0.8em;
   font-size: 1em;
+}
+
+a:hover {
+  color: var(--shadow-color);
+  font-weight: bold;
 }
 
 .social a:last-child{
@@ -95,5 +126,26 @@
 @media (min-width: 978px) {
   .social a {
     font-size: 0.7em;
+  }
+
+  .placard-title {
+    font-size: 1em;
+  }
+
+  .placard-role {
+    font-size: 0.8em;
+  }
+
+  .placard-location {
+    font-size: 0.6em;
+  }
+
+  .content-card-title {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+
+  .content-card-content {
+    font-size: 0.8em;
   }
 }

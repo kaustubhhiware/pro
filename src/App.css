@@ -60,13 +60,14 @@
 
 @media (min-width: 978px) {
   #superset {
-    padding-left: 30vh;
+    padding-left: 20vh;
     padding-right: 10vh;
   }
 }
 
 .light-theme{
   --background-image: url('./images/sakura.jpg');
+
   --background-color: var(--pink-1);
   --text-color: black;
   --shadow-color: var(--pink-7);
