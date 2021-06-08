@@ -21,12 +21,13 @@ export const Themer = () => {
   return (
     <Row className="themer-row">
     <Col xs={6} md={1} className="themer-set">
-    <button id="themer" className="themer" onClick={toggleThemes}>
-    🌸
-    </button>
+      <button id="themer" className="themer" onClick={toggleThemes}>
+        <span role="img" aria-label="theme-switcher" id="themoji">
+          🌸
+        </span>
+      </button>
     </Col>
     <Col xs={6} md={3}>Top nav</Col>
-    <Col xs={0} md={6}></Col>
     </Row>
     );
   };

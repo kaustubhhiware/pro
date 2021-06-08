@@ -31,6 +31,14 @@
   margin-bottom: 0.5em;
 }
 
+.themer:hover {
+  transform: translateY(-0.25em);
+}
+
+.themer:active {
+  transform: translateY(0.5em);
+}
+
 .content-card {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -52,6 +60,15 @@
 .placard-title {
   padding-top: 1em;
   font-weight: bolder;
+}
+
+.placard-role {
+  font-size: 0.8em;
+}
+
+.placard-location {
+  font-size: 0.6em;
+  font-weight: 500;
 }
 
 /* physical lines within cards */
