@@ -59,11 +59,10 @@
 }
 
 @media (min-width: 978px) {
-#superset {
-  padding-left: 30vh;
-  padding-right: 10vh;
-}
-
+  #superset {
+    padding-left: 30vh;
+    padding-right: 10vh;
+  }
 }
 
 .light-theme{
@@ -72,7 +71,6 @@
   --text-color: black;
   --shadow-color: var(--pink-7);
 
-  --hover-color: var(--light-blue); /* color of button when hovered, should be of other theme */
   --alt-background-color: var(--dark-blue);
   --alt-text-color: white;
   --alt-shadow-color: var(--mid-blue);
@@ -85,7 +83,6 @@
   --text-color: white;
   --shadow-color: var(--mid-blue);
 
-  --hover-color: var(--pink-4);
   --alt-background-color: var(--pink-1);
   --alt-text-color: black;
   --alt-shadow-color: var(--pink-7);

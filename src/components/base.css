@@ -53,8 +53,8 @@
 }
 
 .placard-image {
-  width: inherit;
-  border-radius: 10%;
+  width: 90%;
+  box-shadow: 5px 5px var(--shadow-color);
 }
 
 .placard-title {
@@ -63,15 +63,37 @@
 }
 
 .placard-role {
+  margin-top: 0.25em;
   font-size: 0.8em;
 }
 
 .placard-location {
+  margin-top: 0.25em;
   font-size: 0.6em;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 /* physical lines within cards */
 .liner {
   border: 1px solid var(--shadow-color);
+}
+
+.social {
+  align-items: center;
+}
+
+.social a{
+  color: var(--text-color);
+  margin-right: 1em;
+  font-size: 1em;
+}
+
+.social a:last-child{
+  margin-right: 0;
+}
+
+@media (min-width: 978px) {
+  .social a {
+    font-size: 0.7em;
+  }
 }
