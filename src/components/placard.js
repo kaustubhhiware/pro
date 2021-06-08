@@ -9,14 +9,14 @@ export const Placard = () => {
   
   return (
     <Col xs={12} md={3}>
-    <div class="sidecard">
-    <img src={profilePic} class="placard-image" alt="Profile"/>
+    <div className="sidecard">
+    <img src={profilePic} className="placard-image" alt="Profile"/>
     
-    <div class="placard-title">
+    <div className="placard-title">
     Kaustubh Hiware
     </div>
     
-    <hr class="liner" />
+    <hr className="liner" />
     </div>
     </Col>
     );

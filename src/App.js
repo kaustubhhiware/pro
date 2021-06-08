@@ -5,23 +5,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Row } from 'react-bootstrap';
-import Sakura from './images/sakura.jpg';
-import Waves from './images/Waves.jpg';
 
 import Placard from './components/placard';
 import Content from './components/content';
-
-  let theme = 'light-theme';
-
-// const toggleThemes = () => {
-//     if (theme === 'light-theme') {
-//       changeTheme('dark-theme');
-//       theme = 'dark-theme';
-//     } else {
-//       changeTheme('light-theme');
-//       theme = 'light-theme'
-//     }
-//   }
 
 function App() {
   return (
@@ -32,9 +18,7 @@ function App() {
     </CustomPreloader>
     
     <header className="App-header">
-    <Row id="superset" className="dark-theme" fluid style={{
-      backgroundImage: `url(${Waves})`,
-      }}>
+    <Row id="superset" className="dark-theme">
         <Placard/>
         <Content/>
     </Row>

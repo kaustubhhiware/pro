@@ -44,6 +44,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-image: var(--background-image);
 
   min-height: 100vh;
   margin: 0;
@@ -65,12 +66,30 @@
 
 }
 
-
 .light-theme{
+  --background-image: url('./images/sakura.jpg');
   --background-color: var(--pink-1);
   --text-color: black;
   --shadow-color: var(--pink-7);
 
+  --alt-background-color: var(--dark-blue);
+  --alt-text-color: white;
+  --alt-shadow-color: var(--mid-blue);
+}
+
+.dark-theme{
+  --background-image: url('./images/Waves.jpg');
+
+  --background-color:var(--dark-blue);
+  --text-color: white;
+  --shadow-color: var(--mid-blue);
+
+  --alt-background-color: var(--pink-1);
+  --alt-text-color: black;
+  --alt-shadow-color: var(--pink-7);
+}
+
+:root {
   --pink-1: #F5E8ED;
   --pink-2: #FFCBE1;
   --pink-3: #FEB0CB;
@@ -78,12 +97,6 @@
   --pink-5: #FF769D;
   --pink-6: #EE4D6F;
   --pink-7: #E83261;
-}
-
-.dark-theme{
-  --background-color:var(--dark-blue);
-  --text-color: white;
-  --shadow-color: var(--mid-blue);
 
   --dark-brown: #C19F6F;
   --light-brown: #D9D1BA;

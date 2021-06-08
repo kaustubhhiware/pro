@@ -12,15 +12,20 @@
 }
 
 .themer-row {
+  position:sticky;
+  top: 0;
+  width: 100%;
+  flex-direction: row-reverse;
 }
 
 .themer {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--alt-background-color);
+  color: var(--alt-text-color);
   align-items: center;
   text-align: center;
   
-  box-shadow: 10px 10px var(--shadow-color);
+  float: right;
+  box-shadow: 5px 5px var(--alt-shadow-color);
   
   padding: 1vh;
   margin-bottom: 0.5em;
