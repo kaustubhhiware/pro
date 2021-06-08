@@ -11,17 +11,32 @@
   margin-bottom: 1em;
 }
 
+.themer-row {
+}
+
+.themer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  align-items: center;
+  text-align: center;
+  
+  box-shadow: 10px 10px var(--shadow-color);
+  
+  padding: 1vh;
+  margin-bottom: 0.5em;
+}
+
 .content-card {
   background-color: var(--background-color);
   color: var(--text-color);
   align-items: center;
   text-align: center;
-
+  
   box-shadow: 10px 10px var(--shadow-color);
-
+  
   padding: 5vh;
   margin-bottom: 1em;
-
+  
 }
 
 .placard-image {
