@@ -21,7 +21,7 @@ export const Themer = () => {
   return (
     <Row className="themer-row">
     <Col xs={6} md={1} className="themer-set">
-      <button id="themer" className="themer" onClick={toggleThemes}>
+      <button id="themer" onClick={toggleThemes}>
         <span role="img" aria-label="theme-switcher" id="themoji">
           🌸
         </span>
