@@ -12,7 +12,5 @@ Dark background: https://wallpapercave.com/the-great-wave-off-kanagawa-hd-wallpa
 ## Building the pages
 
 ```sh
-npm run build
-rm -rf docs
-mv build docs
+make build # contains custom domain
 ```

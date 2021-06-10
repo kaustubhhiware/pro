@@ -13,7 +13,7 @@
 
 .themer-row {
   position:sticky;
-  top: 0;
+  top: 2em;
   width: 100%;
   flex-direction: row-reverse;
 }
@@ -63,22 +63,27 @@
 
 .content-card-content a {
   color: var(--text-color);
+  font-weight: 600;
 }
 
-.content-card-subtitle {
+.content-card-subtitle,
+.content-card-subtitle-displaced {
   font-size: 0.8em;
   margin-top: 0.6em;
   margin-bottom: 0.6em;
 }
 
-.paper-list {
+.content-list {
   margin-bottom: 1.5em;
 }
 
-.paper-link {
+.content-link {
   font-size: 0.8em;
 }
 
+.right-float {
+  float: right;
+}
 .placard-image {
   width: 90%;
   box-shadow: 5px 5px var(--shadow-color);
@@ -153,5 +158,18 @@ a:hover {
 
   .content-card-content {
     font-size: 0.8em;
+    margin-left: 0.5em;
+  }
+
+  .content-card-subtitle-displaced {
+    margin-left: 1em;
+  }
+
+  .right-float {
+    margin-right: 2em;
+  }
+
+  .possibly-empty-link {
+    font-size: 0.7em;
   }
 }
