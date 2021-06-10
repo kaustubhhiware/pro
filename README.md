@@ -11,6 +11,9 @@ Dark background: https://wallpapercave.com/the-great-wave-off-kanagawa-hd-wallpa
 
 ## Building the pages
 
+The solution is slightly hacky, but hey it works
+The repository serves the `docs` folder, there are no docs - sorry.
+
 ```sh
 make build # contains custom domain
 ```
