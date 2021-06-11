@@ -6,6 +6,16 @@ ref: https://stackoverflow.com/a/42331003
 */
 export const Themes = [
     {
+        Name: "beach",
+        Emoji: "🏖️",
+        Colors: {
+            BG: "#D9E0E9",
+            Text: "#002324",
+            Shadow: "#00404A",
+        },
+        Source: "https://unsplash.com/photos/bBL4o4BJxag",
+    },
+    {
         Name: "waves",
         Emoji: "🌊",
         Colors: {
@@ -26,14 +36,14 @@ export const Themes = [
         Source: "https://unsplash.com/photos/bBWHtMOvxKY",
     },
     {
-        Name: "train",
-        Emoji: "🚂",
+        Name: "snow",
+        Emoji: "❄️",
         Colors: {
-            BG: "#F9F3F5",
-            Text: "#EC5A01",
-            Shadow: "#FEA907",
+            BG: "#1E2636",
+            Text: "#FEB79C",
+            Shadow: "#4F7091",
         },
-        Source: "https://unsplash.com/photos/PHyF2mCMei0",
+        Source: "https://unsplash.com/photos/jBxee1u2RAU",
     },
     {
         Name: "mountain",
@@ -46,26 +56,6 @@ export const Themes = [
         Source: "https://unsplash.com/photos/bBL4o4BJxag",
     },
     {
-        Name: "beach",
-        Emoji: "🏖️",
-        Colors: {
-            BG: "#D9E0E9",
-            Text: "#002324",
-            Shadow: "#00404A",
-        },
-        Source: "https://unsplash.com/photos/bBL4o4BJxag",
-    },
-    {
-        Name: "snow",
-        Emoji: "❄️",
-        Colors: {
-            BG: "#1E2636",
-            Text: "#FEB79C",
-            Shadow: "#4F7091",
-        },
-        Source: "https://unsplash.com/photos/jBxee1u2RAU",
-    },
-    {
         Name: "plant",
         Emoji: "🌱",
         Colors: {
@@ -75,10 +65,20 @@ export const Themes = [
         },
         Source: "https://unsplash.com/photos/Gl6GljPtJpo",
     },
+    {
+        Name: "train",
+        Emoji: "🚂",
+        Colors: {
+            BG: "#F9F3F5",
+            Text: "#EC5A01",
+            Shadow: "#FEA907",
+        },
+        Source: "https://unsplash.com/photos/PHyF2mCMei0",
+    },
 ];
 
 
 
 
 export default Themes;
-export const ThemeDefault = "6";
+export const ThemeDefault = "0";
