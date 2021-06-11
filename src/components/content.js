@@ -76,7 +76,7 @@ export const Content = () => {
               <br />
               <span className="content-card-subtitle-displaced">
                 at <PossiblyEmptyLink title={talk.Venue} link={talk.URLs.Venue} alt_title={talk.Venue}/>
-                <span class="right-float">
+                <span className="right-float">
                   {talk.When}
                 </span>
               </span>
