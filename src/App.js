@@ -9,6 +9,8 @@ import { Row } from 'react-bootstrap';
 import Placard from './components/placard';
 import Content from './components/content';
 
+import {ThemeDefault, Themes} from './data/_themes';
+
 function App() {
   return (
     <div className="App">
@@ -18,7 +20,8 @@ function App() {
     </CustomPreloader>
     
     <header className="App-header">
-    <Row id="superset" className="dark-theme">
+      {/* ToDo: CHANGE TO componentDIDmount or something */}
+    <Row id="superset" className={Themes[ThemeDefault].Name}>
         <Placard/>
         <Content/>
     </Row>

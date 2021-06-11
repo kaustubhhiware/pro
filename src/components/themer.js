@@ -3,17 +3,25 @@ import './base.css';
 import { Row, Col } from 'react-bootstrap';
 import changeTheme from './../utils/changeTheme.js';
 
-// starting theme - should probably pass as prop
-  let theme = 'dark-theme';
+import {Themes, ThemeDefault} from '../data/_themes';
+
+const circularIncrement = (i) => {
+  if (i+1 >= Themes.length) {
+    return 0
+  }
+  return i+1
+}
 
 const toggleThemes = () => {
-  if (theme === 'light-theme') {
-    changeTheme('dark-theme', '🌸');
-    theme = 'dark-theme';
-  } else {
-    changeTheme('light-theme', '🌊');
-    theme = 'light-theme'
-  }
+  let index = window.getComputedStyle(document.documentElement).getPropertyValue('--theme-index');
+  index = index - "0" || 0;
+
+  index = circularIncrement(index)
+  let next_index = circularIncrement(index)
+  changeTheme(Themes[index], Themes[next_index])
+
+  // increment for next toggle
+  document.documentElement.style.setProperty('--theme-index', (index).toString());
 }
 
 export const Themer = () => {
@@ -23,7 +31,7 @@ export const Themer = () => {
     <Col xs={6} md={1} className="themer-set">
       <button id="themer" onClick={toggleThemes}>
         <span role="img" aria-label="theme-switcher" id="themoji">
-          🌸
+          {Themes[circularIncrement(parseInt(ThemeDefault))].Emoji}
         </span>
       </button>
     </Col>

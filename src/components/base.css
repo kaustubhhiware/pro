@@ -19,13 +19,13 @@
 }
 
 #themer {
-  background-color: var(--alt-background-color);
-  color: var(--alt-text-color);
+  background-color: var(--next-background-color);
+  color: var(--next-text-color);
   align-items: center;
   text-align: center;
   
   float: right;
-  box-shadow: 5px 5px var(--alt-shadow-color);
+  box-shadow: 5px 5px var(--next-shadow-color);
   
   padding: 1vh;
   margin-bottom: 0.5em;

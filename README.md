@@ -5,9 +5,7 @@ ToDo: Make gimmicky website
 
 ### Credits
 
-Light background: https://unsplash.com/photos/bBWHtMOvxKY
-
-Dark background: https://wallpapercave.com/the-great-wave-off-kanagawa-hd-wallpapers
+Color palettes have been provided by [u/marinemotion](https://www.reddit.com/user/marinemotion/)
 
 ## Building the pages
 
