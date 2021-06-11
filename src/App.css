@@ -77,23 +77,3 @@
 .train{
   --background-image: url('./images/train.jpeg');
 }
-
-:root {
-  --pink-1: #F5E8ED;
-  --pink-7: #E83261;
-
-  --mid-blue: #346A84;
-  --dark-blue: #193656;
-
-  /* ToDo: temporarily setting - should set on componentdidmount*/
-  --theme-index: "0"; /* Use this for reading current theme and updating */
-
-  /* ToDo: remove all values */
-  --background-color: var(--pink-1);
-  --text-color: black;
-  --shadow-color: var(--pink-7);
-
-  --next-background-color: var(--dark-blue);
-  --next-text-color: white;
-  --next-shadow-color: var(--mid-blue);
-}

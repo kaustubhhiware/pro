@@ -31,7 +31,7 @@ export const Themes = [
         Colors: {
             BG: "#F9F3F5",
             Text: "#EC5A01",
-            Shadow: "##FEA907",
+            Shadow: "#FEA907",
         },
         Source: "https://unsplash.com/photos/PHyF2mCMei0",
     },
@@ -41,4 +41,4 @@ export const Themes = [
 
 
 export default Themes;
-export const ThemeDefault = "0"; // first theme is default
+export const ThemeDefault = "0";
