@@ -77,3 +77,19 @@
 .train{
   --background-image: url('./images/train.jpeg');
 }
+
+.mountain{
+  --background-image: url('./images/mountains.jpeg');
+}
+
+.beach{
+  --background-image: url('./images/beach.jpeg');
+}
+
+.snow{
+  --background-image: url('./images/snow.jpeg');
+}
+
+.plant{
+  --background-image: url('./images/plant.jpeg');
+}
