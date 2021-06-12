@@ -4,18 +4,20 @@
   align-items: center;
   text-align: center;
 
-  box-shadow: 10px 10px var(--shadow-color);
+  box-shadow: 5px 5px var(--shadow-color);
 
   padding: 5%;
-  width: inherit;
-  margin-bottom: 1em;
+  width: 95%;
 }
 
 .themer-row {
   position:sticky;
   top: 2em;
-  width: 100%;
+  width: 90%;
   flex-direction: row-reverse;
+
+  /* ToDo: Hide themer on small screens, until I figure out why it moves the complete content column out of view */
+  display: none;
 }
 
 #themer {
@@ -29,9 +31,6 @@
   
   padding: 1vh;
   margin-bottom: 0.5em;
-
-  /* ToDo: Hide themer on small screens, until I figure out why it moves the complete content column out of view */
-  display: none;
 }
 
 #themer:hover {
@@ -49,7 +48,6 @@
   
   padding: 4vh 2vh;
   margin-bottom: 0.8em;
-  font-size: 1em;
 }
 
 .content-card-title {
@@ -87,6 +85,7 @@
 .right-float {
   float: right;
 }
+
 .placard-image {
   width: 90%;
   box-shadow: 5px 5px var(--shadow-color);
@@ -140,6 +139,7 @@ a:hover {
     position:sticky;
     top: 2em;
     width: 100%;
+    box-shadow: 10px 10px var(--shadow-color);
   }
 
   .social a {
@@ -156,6 +156,10 @@ a:hover {
 
   .placard-location {
     font-size: 0.6em;
+  }
+
+  .content-card {
+      box-shadow: 10px 10px var(--shadow-color);
   }
 
   .content-card-title {
@@ -178,6 +182,10 @@ a:hover {
 
   .possibly-empty-link {
     font-size: 0.7em;
+  }
+
+  .themer-row {
+    width: 100%;
   }
 
   /* ToDo: Remove this restriction - only visible on large screens */
