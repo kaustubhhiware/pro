@@ -4,7 +4,7 @@ import { CustomPreloader } from 'react-preloaders';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 import Placard from './components/placard';
 import Content from './components/content';
@@ -27,12 +27,12 @@ class App extends React.Component {
           <img src={preloadergif} alt="" className="preloader" />
         </CustomPreloader>
 
-        <header className="App-header">
+        <Container fluid className="contain">
           <Row id="superset">
               <Placard/>
               <Content/>
           </Row>
-        </header>
+        </Container>
       </div>
     );
   }

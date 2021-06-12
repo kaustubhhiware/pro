@@ -7,17 +7,14 @@
   box-shadow: 5px 5px var(--shadow-color);
 
   padding: 5%;
-  width: 95%;
+  margin-bottom: 2em;
 }
 
 .themer-row {
   position:sticky;
   top: 2em;
-  width: 90%;
   flex-direction: row-reverse;
-
-  /* ToDo: Hide themer on small screens, until I figure out why it moves the complete content column out of view */
-  display: none;
+  margin-left: 0 !important;
 }
 
 #themer {
@@ -29,7 +26,8 @@
   float: right;
   box-shadow: 5px 5px var(--next-shadow-color);
   
-  padding: 1vh;
+  padding: 1.5vh;
+  font-size: 1.5em;
   margin-bottom: 0.5em;
 }
 
@@ -134,7 +132,7 @@ a:hover {
   margin-right: 0;
 }
 
-@media (min-width: 978px) {
+@media (min-width: 1280px) {
   .sidecard {
     position:sticky;
     top: 2em;
@@ -188,8 +186,8 @@ a:hover {
     width: 100%;
   }
 
-  /* ToDo: Remove this restriction - only visible on large screens */
-  #themer {
-    display: initial;
+  #themer{
+    padding: 1vh;
+    font-size: 1em;
   }
 }

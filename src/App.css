@@ -2,11 +2,12 @@
   text-align: center;
 }
 
-.App-header {
-  display: flex;
-  flex-direction: row;
+.contain {
   font-size: calc(10px + 2vmin);
   color: white;
+
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .preloader {
@@ -26,16 +27,16 @@
   padding-top: 10vh;
   padding-left: 0;
   text-align: initial;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
-@media (min-width: 978px) {
+@media (min-width: 1280px) {
   #superset {
     padding-left: 20vh;
     padding-right: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 

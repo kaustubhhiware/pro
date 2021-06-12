@@ -12,7 +12,7 @@ import Talks from '../data/talks';
 export const Content = () => {
   
   return (
-    <Col xs={12} md={9}>
+    <Col lg={12} xl={9}>
     <Themer />
 
     <div className="content-card">

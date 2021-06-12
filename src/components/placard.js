@@ -12,7 +12,7 @@ import { IoMail } from "react-icons/io5";
 export const Placard = () => {
   
   return (
-    <Col xs={12} md={3}>
+    <Col lg={12} xl={3}>
     <div className="sidecard">
     <img src={profilePic} className="placard-image" alt="Profile"/>
     

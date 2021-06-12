@@ -27,14 +27,16 @@ export const Themer = () => {
   
   return (
     <Row className="themer-row">
-    <Col xs={6} md={1} className="themer-set">
+    <Col className="themer-set">
       <button id="themer" onClick={ToggleThemes}>
         <span role="img" aria-label="theme-switcher" id="themoji">
           {Themes[circularIncrement(parseInt(ThemeDefault))].Emoji}
         </span>
       </button>
     </Col>
-    <Col xs={6} md={3}>Top nav</Col>
+
+    {/* ToDo: Fix top nav later */}
+    <Col>Top nav</Col>
     </Row>
     );
   };
