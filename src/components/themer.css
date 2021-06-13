@@ -1,9 +1,10 @@
 .themer-row {
   position:sticky;
-  top: 2em;
+  top: 0.5em;
+  right: 1em;
   flex-direction: row-reverse;
   margin-left: 0 !important;
-  z-index: 1;
+  z-index: 1; /*float above work images */
 }
 
 #themer {
@@ -28,13 +29,53 @@
   transform: translateY(0.5em);
 }
 
+.nav-container {
+  margin-right: 1em;
+  padding-left: 0.5em;
+  padding-top: 0.75em;
+
+  background-color: var(--background-color);
+  box-shadow: 5px 5px var(--shadow-color);
+  opacity: 0.8;
+
+  height: 3em;
+
+  display: none;
+}
+
+.navLink {
+  padding-right: 0.25em;
+  height: 2em;
+}
+
+.navIcon {
+  color: var(--text-color);
+  font-size: 1.5em;
+}
+
 @media (min-width: 1280px) {
   .themer-row {
     width: 100%;
+    top: 2em;
+    right: 0;
   }
 
   #themer{
     padding: 1vh;
+    font-size: 1em;
+  }
+  
+  .nav-container {
+    box-shadow: 10px 10px var(--shadow-color);
+    height: 2em;
+    padding-top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navIcon {
     font-size: 1em;
   }
 }

@@ -19,7 +19,8 @@ export const Content = () => {
     <Col lg={12} xl={9}>
     <Themer />
 
-    <div className="content-card">
+    {/* Intro */}
+    <div className="content-card" id="intro">
       <div className="content-card-title">
         Hello, I'm {Bio.FirstName}! 👋
       </div>
@@ -29,7 +30,7 @@ export const Content = () => {
     </div>
 
     {/* Experience */}
-    <div className="content-card">
+    <div className="content-card" id="work">
       <div className="content-card-title">
         Work Experience
       </div>
@@ -48,7 +49,7 @@ export const Content = () => {
     </div>
 
     {/* Publications */}
-    <div className="content-card">
+    <div className="content-card" id="publications">
       <div className="content-card-title">
         Publications
       </div>
@@ -76,7 +77,7 @@ export const Content = () => {
     </div>
 
     {/* Talks */}
-    <div className="content-card">
+    <div className="content-card" id="talks">
       <div className="content-card-title">
         Talks
       </div>
@@ -108,7 +109,7 @@ export const Content = () => {
     </div>
 
     {/* Education */}
-    <div className="content-card">
+    <div className="content-card" id="education">
       <div className="content-card-title">
         Education
       </div>

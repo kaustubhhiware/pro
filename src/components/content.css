@@ -58,6 +58,10 @@
     margin-bottom: 0.5em;
   }
 
+  .content-card-subtitle {
+    font-size: 0.7em;
+  }
+
   .content-card-content {
     font-size: 0.8em;
     margin-left: 0.5em;

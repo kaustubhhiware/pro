@@ -1,9 +1,10 @@
 import React from "react";
 import './themer.css';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import changeTheme from './../utils/changeTheme.js';
 
 import {Themes, ThemeDefault} from '../data/_themes';
+import { MdHome, MdWork, MdModeEdit, MdMic, MdSchool } from "react-icons/md";
 
 const circularIncrement = (i) => {
   if (i+1 >= Themes.length) {
@@ -27,16 +28,29 @@ export const Themer = () => {
   
   return (
     <Row className="themer-row">
-    <Col className="themer-set">
-      <button id="themer" onClick={ToggleThemes}>
-        <span role="img" aria-label="theme-switcher" id="themoji">
-          {Themes[circularIncrement(parseInt(ThemeDefault))].Emoji}
-        </span>
-      </button>
-    </Col>
+        <button id="themer" onClick={ToggleThemes}>
+          <span role="img" aria-label="theme-switcher" id="themoji">
+            {Themes[circularIncrement(parseInt(ThemeDefault))].Emoji}
+          </span>
+        </button>
 
-    {/* ToDo: Fix top nav later */}
-    <Col>Top nav</Col>
+        <div className="nav-container">
+          <a href="#intro" className="navLink">
+            <MdHome className="navIcon" />
+          </a>
+          <a href="#work" className="navLink">
+            <MdWork className="navIcon" />
+          </a>
+          <a href="#publications" className="navLink">
+            <MdModeEdit className="navIcon" />
+          </a>
+          <a href="#talks" className="navLink">
+            <MdMic className="navIcon" />
+          </a>
+          <a href="#education" className="navLink">
+            <MdSchool className="navIcon" />
+          </a>
+        </div>
     </Row>
     );
   };
