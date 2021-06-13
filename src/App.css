@@ -39,6 +39,23 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--background-color); 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--shadow-color); 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color); 
+  }
 }
 
 /* Themes - name must match - only include background images here */
