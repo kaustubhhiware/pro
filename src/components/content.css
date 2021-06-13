@@ -45,6 +45,7 @@
   color: var(--background-color);
   font-weight: bold;
   background-color: var(--text-color);
+  padding: 0.25em;
 }
 
 @media (min-width: 1280px) {

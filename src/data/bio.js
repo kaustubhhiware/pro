@@ -15,7 +15,7 @@ export const Bio = {
     Intro: [
         "I'm a Software Engineer at Mercari US@Tokyo with an inclination towards tech products.\n",
         "In free time, I watch anime and take photos. Humor in all things.\n", 
-        "I cover interesting trends in SaaS on a podcast:",
+        "I cover interesting trends in SaaS:",
     ],
     PodcastName: "Tech Culture Podcast",
     Erdos: {

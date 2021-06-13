@@ -38,6 +38,7 @@ export const Content = () => {
           <Timeline 
             When={job.When}
             Title={job.Role}
+            Logo={job.Company.Logo}
             Subtitle={job.Company.Name}
             SubtitleLink={job.Company.URL}
             Description={job.Description}
@@ -116,6 +117,7 @@ export const Content = () => {
           <Timeline 
             When={school.When}
             Title={school.Name}
+            Logo={school.Logo}
             TitleLink={school.URL}
             Subtitle={school.Degree}
             Description={school.Description}
