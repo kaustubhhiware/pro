@@ -18,6 +18,10 @@ export const Bio = {
         "I cover interesting trends in SaaS on a podcast:",
     ],
     PodcastName: "Tech Culture Podcast",
+    Erdos: {
+        Number: "4",
+        URL: "https://www.csauthors.net/distance/paul-erdos/kaustubh-hiware",
+    }
 };
 
 export default Bio;

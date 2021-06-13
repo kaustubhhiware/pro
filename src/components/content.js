@@ -20,10 +20,11 @@ export const Content = () => {
         Hello, I'm {Bio.FirstName}! 👋
       </div>
       <div className="content-card-content">
-        {Bio.Intro} <a href={Bio.URLs.Podcast} target="_blank" rel="noopener noreferrer">{Bio.PodcastName}</a>
+        {Bio.Intro} <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="." />
       </div>
     </div>
 
+    {/* Experience */}
     <div className="content-card">
       <div className="content-card-title">
         Experience
@@ -33,6 +34,7 @@ export const Content = () => {
       </div>
     </div>
 
+    {/* Publications */}
     <div className="content-card">
       <div className="content-card-title">
         Publications
@@ -41,12 +43,8 @@ export const Content = () => {
         <ul>
           {Papers.map((paper) => (
             <li className="content-list" key={paper.Title}>
-              {paper.Title} - <a href={paper.URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="content-link">
-                link
-              </a><br />
+              {paper.Title} - <PossiblyEmptyLink href={paper.URL} className="content-link" text="link" alt_text="link" />
+              <br />
               <span className="content-card-subtitle">
                 at the {paper.Venue}
               </span>
@@ -55,36 +53,51 @@ export const Content = () => {
             </li>
           ))}
         </ul>
+
+        Fun fact: I have an&nbsp;
+        <PossiblyEmptyLink href={Bio.Erdos.URL} text="Erdős" alt_text="."/>
+        &nbsp;number of {Bio.Erdos.Number}.
       </div>
     </div>
 
+    {/* Talks */}
     <div className="content-card">
       <div className="content-card-title">
         Talks
       </div>
       <div className="content-card-content">
-        {Talks.TalkIntro} <a href={Bio.URLs.Podcast} target="_blank" rel="noopener noreferrer">{Bio.PodcastName}</a>
+        {Talks.TalkIntro} <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="."/>
         <hr className="breather" />
         <ul>
           {Talks.PreviousTalks.map((talk) => (
             <li className="content-list" key={talk.Title}>
               {talk.Title}
               -
-              <PossiblyEmptyLink title=" [link]" link={talk.URLs.Primary} /> {/* link shouldn't be empty, but what the heck I like this abstraction now */}
-              <PossiblyEmptyLink title=" | [video]" link={talk.URLs.Video} alt_title=""/>
-              <PossiblyEmptyLink title=" | [slides]" link={talk.URLs.Slides} alt_title=""/>
+              <PossiblyEmptyLink text=" [link]" href={talk.URLs.Primary} /> {/* link shouldn't be empty, but what the heck I like this abstraction now */}
+              <PossiblyEmptyLink text=" | [video]" href={talk.URLs.Video} alt_text=""/>
+              <PossiblyEmptyLink text=" | [slides]" href={talk.URLs.Slides} alt_text=""/>
               <br />
               <span className="content-card-subtitle-displaced">
-                at <PossiblyEmptyLink title={talk.Venue} link={talk.URLs.Venue} alt_title={talk.Venue}/>
                 <span className="right-float">
                   {talk.When}
                 </span>
+                at <PossiblyEmptyLink text={talk.Venue} href={talk.URLs.Venue} alt_text="."/>
               </span>
               <br />
               <span className="content-card-subtitle">{talk.Description}</span>
             </li>
           ))}
         </ul>
+      </div>
+    </div>
+
+    {/* Education */}
+    <div className="content-card">
+      <div className="content-card-title">
+        Education
+      </div>
+      <div className="content-card-content">
+        // ToDo
       </div>
     </div>
     </Col>
