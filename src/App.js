@@ -9,6 +9,7 @@ import { Container, Row } from 'react-bootstrap';
 import Placard from './components/placard';
 import Content from './components/content';
 import {ToggleThemes} from './components/themer';
+import Footer from './components/footer';
 
 import {ThemeDefault} from './data/_themes';
 
@@ -32,6 +33,7 @@ class App extends React.Component {
               <Placard/>
               <Content/>
           </Row>
+          <Footer/>
         </Container>
       </div>
     );

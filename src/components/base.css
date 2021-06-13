@@ -123,13 +123,37 @@
   font-size: 1em;
 }
 
-a:hover {
+.social a:hover,
+.content-card a:hover {
   color: var(--shadow-color);
   font-weight: bold;
 }
 
 .social a:last-child{
   margin-right: 0;
+}
+
+.footer {
+  background-color: var(--shadow-color);
+  color: var(--background-color);
+  height: 10vh;
+
+  padding: 3vh;
+  text-align: center;
+}
+
+.plain-jane,
+#bg-source {
+  color: var(--background-color) !important;
+}
+
+.plain-jane a:hover,
+#bg-source a:hover {
+  text-decoration: none;
+}
+
+#bg-source {
+  font-size: 0.6em;
 }
 
 @media (min-width: 1280px) {
@@ -189,5 +213,9 @@ a:hover {
   #themer{
     padding: 1vh;
     font-size: 1em;
+  }
+
+  .footer {
+      font-size: 0.7em;
   }
 }
