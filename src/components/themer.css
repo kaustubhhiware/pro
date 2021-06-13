@@ -70,9 +70,10 @@
     height: 2em;
     padding-top: 0;
 
-    display: flex;
+    /* Not really feeling the navbar tbh */
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
   }
 
   .navIcon {
