@@ -1,0 +1,83 @@
+.sidecard {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  align-items: center;
+  text-align: center;
+
+  box-shadow: 5px 5px var(--shadow-color);
+
+  padding: 5%;
+  margin-bottom: 2em;
+}
+
+.placard-image {
+  width: 90%;
+  box-shadow: 5px 5px var(--shadow-color);
+}
+
+.placard-title {
+  padding-top: 1em;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.placard-role {
+  margin-top: 0.25em;
+}
+
+.placard-location {
+  margin-top: 0.25em;
+  font-weight: bold;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.social a{
+  color: var(--text-color);
+  font-size: 1em;
+}
+
+.social a:last-child{
+  margin-right: 0;
+}
+
+/* physical lines within cards */
+.liner {
+  border: 1px solid var(--shadow-color);
+}
+
+.social a:hover{
+  color: var(--shadow-color);
+}
+
+@media (min-width: 1280px) {
+  .sidecard {
+    position:sticky;
+    top: 2em;
+    width: 100%;
+    box-shadow: 10px 10px var(--shadow-color);
+  }
+
+  .social a {
+    font-size: 0.7em;
+  }
+
+  .placard-title {
+    font-size: 1em;
+  }
+
+  .placard-role {
+    font-size: 0.8em;
+  }
+
+  .placard-location {
+    font-size: 0.6em;
+  }
+}

@@ -1,0 +1,68 @@
+.content-card {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  box-shadow: 10px 10px var(--shadow-color);
+  
+  padding: 4vh 2vh;
+  margin-bottom: 0.8em;
+}
+
+.content-card-title {
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+
+.content-card-content {
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+.content-card-content a {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.content-card-subtitle,
+.content-card-subtitle-displaced {
+  font-size: 0.8em;
+}
+
+.content-card-subtitle {
+  margin-top: 0.7em;
+}
+
+.content-list {
+  margin-bottom: 1.5em;
+}
+
+.content-link {
+  font-size: 0.8em;
+}
+
+.content-card a:hover {
+  color: var(--background-color);
+  font-weight: bold;
+  background-color: var(--text-color);
+}
+
+@media (min-width: 1280px) {
+  .content-card {
+      box-shadow: 10px 10px var(--shadow-color);
+  }
+
+  .content-card-title {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+
+  .content-card-content {
+    font-size: 0.8em;
+    margin-left: 0.5em;
+  }
+
+  .content-card-subtitle-displaced {
+    margin-left: 1em;
+  }
+}

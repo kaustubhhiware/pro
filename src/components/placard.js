@@ -1,5 +1,5 @@
 import React from "react";
-import './base.css';
+import './placard.css';
 import { Col } from 'react-bootstrap';
 
 import Bio from '../data/bio';

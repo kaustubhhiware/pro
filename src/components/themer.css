@@ -1,0 +1,39 @@
+.themer-row {
+  position:sticky;
+  top: 2em;
+  flex-direction: row-reverse;
+  margin-left: 0 !important;
+}
+
+#themer {
+  background-color: var(--next-background-color);
+  color: var(--next-text-color);
+  align-items: center;
+  text-align: center;
+  
+  float: right;
+  box-shadow: 5px 5px var(--next-shadow-color);
+  
+  padding: 1.5vh;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#themer:hover {
+  transform: translateY(-0.25em);
+}
+
+#themer:active {
+  transform: translateY(0.5em);
+}
+
+@media (min-width: 1280px) {
+  .themer-row {
+    width: 100%;
+  }
+
+  #themer{
+    padding: 1vh;
+    font-size: 1em;
+  }
+}

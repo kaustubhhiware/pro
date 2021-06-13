@@ -1,5 +1,5 @@
 import React from "react";
-import './base.css';
+import './footer.css';
 
 import { FaHeart} from 'react-icons/fa';
 
@@ -24,7 +24,7 @@ export class Footer extends React.Component {
         Made with &nbsp;
         <a className="love" href="https://youtu.be/dQw4w9WgXcQ"
           target="_blank" rel="noopener noreferrer">
-          <FaHeart color="red" />
+          <FaHeart/>
         </a>
         &nbsp; by &nbsp;
         <a href="https://kaustubhhiware.in" className="plain-jane"

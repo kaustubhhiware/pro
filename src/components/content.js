@@ -1,13 +1,17 @@
 import React from "react";
+import './content.css';
 import './base.css';
 import { Col } from 'react-bootstrap';
 
 import Themer from './themer';
 import PossiblyEmptyLink from "./possiblyEmptyLink";
+import Timeline from "./timeline";
 
 import Bio from '../data/bio';
+import Work from '../data/work';
 import Papers from '../data/papers';
 import Talks from '../data/talks';
+import Education from '../data/education';
 
 export const Content = () => {
   
@@ -27,10 +31,18 @@ export const Content = () => {
     {/* Experience */}
     <div className="content-card">
       <div className="content-card-title">
-        Experience
+        Work Experience
       </div>
       <div className="content-card-content">
-        // ToDo
+        {Work.map((job) => (
+          <Timeline 
+            When={job.When}
+            Title={job.Role}
+            Subtitle={job.Company.Name}
+            SubtitleLink={job.Company.URL}
+            Description={job.Description}
+          />
+        ))}
       </div>
     </div>
 
@@ -49,7 +61,9 @@ export const Content = () => {
                 at the {paper.Venue}
               </span>
               <br />
-              <span className="content-card-subtitle">{paper.Authors}</span>
+              <span className="content-card-subtitle">
+                {paper.Authors}
+              </span>
             </li>
           ))}
         </ul>
@@ -77,14 +91,15 @@ export const Content = () => {
               <PossiblyEmptyLink text=" | [video]" href={talk.URLs.Video} alt_text=""/>
               <PossiblyEmptyLink text=" | [slides]" href={talk.URLs.Slides} alt_text=""/>
               <br />
-              <span className="content-card-subtitle-displaced">
+              <div className="content-card-subtitle-displaced">
                 <span className="right-float">
                   {talk.When}
                 </span>
                 at <PossiblyEmptyLink text={talk.Venue} href={talk.URLs.Venue} alt_text="."/>
-              </span>
-              <br />
-              <span className="content-card-subtitle">{talk.Description}</span>
+              </div>
+              <p className="content-card-subtitle">
+                {talk.Description}
+              </p>
             </li>
           ))}
         </ul>
@@ -97,7 +112,15 @@ export const Content = () => {
         Education
       </div>
       <div className="content-card-content">
-        // ToDo
+        {Education.map((school) => (
+          <Timeline 
+            When={school.When}
+            Title={school.Name}
+            TitleLink={school.URL}
+            Subtitle={school.Degree}
+            Description={school.Description}
+          />
+        ))}
       </div>
     </div>
     </Col>
