@@ -3,7 +3,7 @@ import preloadergif from './images/quote.gif';
 import { CustomPreloader } from 'react-preloaders';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import ReactGA from 'react-ga';
 import { Container, Row } from 'react-bootstrap';
 
 import Placard from './components/placard';
@@ -12,6 +12,10 @@ import {ToggleThemes} from './components/themer';
 import Footer from './components/footer';
 
 import {ThemeDefault} from './data/_themes';
+import {Bio} from './data/bio';
+
+ReactGA.initialize(Bio.GATrackingID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends React.Component {
   // call the toogleThemes function first time to set things up
