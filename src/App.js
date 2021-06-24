@@ -14,7 +14,7 @@ import Footer from './components/footer';
 import {ThemeDefault} from './data/_themes';
 import {Bio, LangDefault} from './data/bio';
 
-// ReactGA.initialize(Bio.GATrackingID);
+ReactGA.initialize(Bio.GATrackingID);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends React.Component {
@@ -30,8 +30,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {/* <CustomPreloader time={3000}> */}
-        <CustomPreloader time={0}>
+        <CustomPreloader time={1200}>
+        {/* <CustomPreloader time={0}> */}
           <img src={preloadergif} alt="" className="preloader" />
         </CustomPreloader>
 

@@ -9,7 +9,7 @@ export const Education = [
         Degree: "B.Tech. & M.Tech. Hons. in Computer Science & Engineering",
         Description: [
             "Awarded Honorable Mention for contributions in Technology at Annual Gymkhana awards.",
-            "Served as Maintainer for MetaKGP during my final & pre-final year: a loose association of engineers & hackers",
+            "Served as Maintainer for MetaKGP during my final & pre-final year: a loose collaborative association of engineers & hackers",
         ],
         Logo: "/images/iitkgp.png",
     },

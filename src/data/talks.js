@@ -4,7 +4,7 @@ Talks: Following URLs assumed mandatory: Primary
 Venue, Video, Slides are optional
 */
 export const Talks = {
-    TalkIntro: "I love to share whatever I've learned and worked on. In 2021, I got interested in how Saas (Software-as-a-Service) businesses operate. I run a fortnightly podcast to share any interesting insights:",
+    TalkIntro: "I love to share my learnings. In 2021, I got interested in how Saas (Software-as-a-Service) businesses operate. I run a fortnightly podcast to share any interesting insights:",
     PreviousTalks: [
         {
             Title: "Using NLP for disaster management",
@@ -22,7 +22,7 @@ export const Talks = {
             Title: "You should be doing Research right now",
             Venue: "Pragma, IIIT Allahabad",
             When: "Jan 2019",
-            Description: "An argument for pursuing research as a college undergrad. Research publications are a great plus when applying at grad schools as well as industry, and provide exposure to unique problems & applications in the domain of Computer Science.",
+            Description: "An argument for pursuing research as a college undergrad. Research publications are a great plus in academia as well as industry, providing exposure to unique problems & applications in the domain of Computer Science.",
             URLs: {
                 Primary: "https://twitter.com/IIITAPragma/status/1085833015995953152",
                 Venue: "https://pragmaconf.tech",
@@ -34,7 +34,7 @@ export const Talks = {
             Title: "Innovations, Trends and Licensing in Open Source",
             Venue: "Open Source Summit, Kshitij, IIT Kharagpur",
             When: "Jan 2018",
-            Description: "Importance of open source and how often it is used in daily life - ML & JS frameworks, research, self-learning cars, you name it. Briefly spoke about philosophy and need of open-source. I covered a repository that I contributed to early-on, which went on to receive 1K+ stars on GitHub in a matter of days. Concluded with the talk with how licensing in open-source works - and why everyone should do it.",
+            Description: "Importance of open source and how often we use it in daily life - ML & JS frameworks, research, self-learning cars, you name it. Briefly spoke about philosophy and need of open-source. The talk concluded with importance of licensing in open source and why everyone should do it.",
             URLs: {
                 Primary: "https://www.facebook.com/kossiitkgp/posts/1588201874590140",
                 Venue: "https://www.facebook.com/events/1387262571380225/",
