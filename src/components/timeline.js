@@ -41,7 +41,7 @@ export class Timeline extends React.Component {
             </ul>
           </Col>
           <Col md={2} lg={1}>
-            <img src={this.props.Logo} className="timeline-img"/>
+            <img src={this.props.Logo} className="timeline-img" alt="Company logo"/>
           </Col>
         </Row>
       </div>

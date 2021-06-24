@@ -2,23 +2,19 @@ import React from "react";
 import './themer.css';
 import { Row } from 'react-bootstrap';
 import changeTheme from './../utils/changeTheme.js';
+import circularIncrement from './../utils/utils.js';
 
 import {Themes, ThemeDefault} from '../data/_themes';
 import { MdHome, MdWork, MdModeEdit, MdMic, MdSchool } from "react-icons/md";
 
-const circularIncrement = (i) => {
-  if (i+1 >= Themes.length) {
-    return 0
-  }
-  return i+1
-}
+
 
 export function ToggleThemes() {
   let index = window.getComputedStyle(document.documentElement).getPropertyValue('--theme-index');
   
   index = index - "0" || 0;
-  index = circularIncrement(index);
-  let next_index = circularIncrement(index);
+  index = circularIncrement(index, Themes.length);
+  let next_index = circularIncrement(index, Themes.length);
   changeTheme(Themes[index], Themes[next_index])
 
   document.documentElement.style.setProperty('--theme-index', (index).toString());

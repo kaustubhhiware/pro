@@ -1,13 +1,31 @@
 import React from "react";
 import './placard.css';
-import { Col } from 'react-bootstrap';
+import { Col, Tooltip, OverlayTrigger } from 'react-bootstrap';
+import circularIncrement from './../utils/utils.js';
+import changeLang from  './../utils/changeLang.js';
 
-import Bio from '../data/bio';
+import {Bio, LangDefault} from '../data/bio';
 import profilePic from './../images/kaustubh.png';
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { SiGooglescholar } from "react-icons/si";
 import { IoMail } from "react-icons/io5";
 
+export function ToggleLang() {
+  let index = window.getComputedStyle(document.documentElement).getPropertyValue('--lang-index');
+  
+  index = index - "0" || 0;
+  index = circularIncrement(index, Bio.Name.length);
+  let next_index = circularIncrement(index, Bio.Name.length);
+  changeLang(Bio.Name[index], Bio.Name[next_index])
+
+  document.documentElement.style.setProperty('--lang-index', (index).toString());
+}
+
+const renderTooltip = (props) => (
+  <Tooltip id="lang-tooltip" {...props}>
+    Change language
+  </Tooltip>
+);
 
 export const Placard = () => {
   
@@ -17,8 +35,22 @@ export const Placard = () => {
     <img src={profilePic} className="placard-image" alt="Profile"/>
     
     <div className="placard-title">
-      {Bio.Name}
+      <span role="img" aria-label="lang-switcher" id="lang-name-text">
+        {Bio.Name[LangDefault].Name}
+      </span>
+      
+      <OverlayTrigger
+        placement="bottom"
+        delay={{ show: 250, hide: 400 }}
+        overlay={renderTooltip}>
+        <button id="lang-switcher" onClick={ToggleLang}>
+          <span role="img" aria-label="lang-switcher" id="langemoji">
+            {Bio.Name[circularIncrement(parseInt(LangDefault), Bio.Name.length)].Emoji}
+          </span>
+        </button>
+      </OverlayTrigger>
     </div>
+
     <div className="placard-role">
       {Bio.Role}
     </div>

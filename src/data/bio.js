@@ -1,6 +1,22 @@
 export const Bio = {
     FirstName: "Kaustubh",
-    Name: "Kaustubh Hiware",
+    Name: [
+        {
+            Lang: "English",
+            Name: "Kaustubh Hiware",
+            Emoji: "🇬🇧",
+        },
+        {
+            Lang: "Japanese",
+            Name: "ヒワレ　コサトバ",
+            Emoji: "🇯🇵",
+        },
+        {
+            Lang: "Hindi",
+            Name: "कौस्तुभ हिवरे",
+            Emoji: "🇮🇳",
+        }
+    ],
     Role: "Software Engineer",
     Location: "Mercari US@Tokyo",
     URLs: {
@@ -26,3 +42,4 @@ export const Bio = {
 };
 
 export default Bio;
+export const LangDefault = "0";

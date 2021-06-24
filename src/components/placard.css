@@ -57,6 +57,16 @@
   color: var(--shadow-color);
 }
 
+#lang-switcher, #langemoji {
+  padding: 0;
+  border: 0;
+  background-color: var(--background-color);
+}
+
+#lang-switcher {
+  font-size: 0.75em;
+}
+
 @media (min-width: 1280px) {
   .sidecard {
     position:sticky;
