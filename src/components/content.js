@@ -54,21 +54,16 @@ export const Content = () => {
         Publications
       </div>
       <div className="content-card-content">
-        <ul>
-          {Papers.map((paper) => (
-            <li className="content-list" key={paper.Title}>
-              {paper.Title} - <PossiblyEmptyLink href={paper.URL} className="content-link" text="link" alt_text="link" />
-              <br />
-              <span className="content-card-subtitle">
-                at the {paper.Venue}
-              </span>
-              <br />
-              <span className="content-card-subtitle">
-                {paper.Authors}
-              </span>
-            </li>
-          ))}
-        </ul>
+        {Papers.map((paper) => (
+          <Timeline
+            When={paper.Venue.Short}
+            Title={paper.Title}
+            TitleLink={paper.URL}
+            Subtitle={paper.Venue.Full}
+            DescriptionLine={paper.Authors}
+            Description={[]}
+          />
+        ))}
 
         Fun fact: I have an&nbsp;
         <PossiblyEmptyLink href={Bio.Erdos.URL} text="Erdős" alt_text="."/>
