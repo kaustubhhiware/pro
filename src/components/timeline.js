@@ -7,11 +7,13 @@ import { Row, Col } from 'react-bootstrap';
 export class Timeline extends React.Component {
   /*
   When
-  Role => Title
+  Role => Title / TitleLink
+  TitleSupplementaryLinks - array of links
   Company => Subtitle
-  Description
+  Description (list) / DescriptionLine
   */
   render() {
+    var supplements = this.props.TitleSupplementaryLinks || [];
     return (
       <div className="timeline-item">
         <span className="duration">
@@ -24,7 +26,16 @@ export class Timeline extends React.Component {
                 text={this.props.Title}
                 href={this.props.TitleLink}
                 alt_text={this.props.Title} />
+              
+              {supplements.map( (supplement, index) => (
+                <PossiblyEmptyLink
+                  text={supplement.text}
+                  href={supplement.link}
+                  alt_text=""
+                  key={index} />
+              ))}
             </div>
+
             <div className="timeline-subtitle">
               <PossiblyEmptyLink
                 text={this.props.Subtitle}
@@ -40,6 +51,10 @@ export class Timeline extends React.Component {
               ))}
             </ul>
 
+          {/*
+            Only one of Description (array of strings)
+            or DescriptionLine should be used.
+          */}
             <p className="timeline-description">
               {this.props.DescriptionLine}
             </p>

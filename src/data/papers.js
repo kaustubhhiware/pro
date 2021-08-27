@@ -1,12 +1,13 @@
 export const Papers = [
     {
-        Title: "Savitr: A system for real-time location extraction from microblogs during emergencies",
-        URL: "https://dl.acm.org/doi/10.1145/3184558.3191623",
+        Title: "NARMADA: Need and Available Resource Managing Assistant for Disasters and Adversities",
+        URL: "https://www.aclweb.org/anthology/2020.socialnlp-1.3/",
         Venue: {
-            Full: "WWW 2018 workshop on Exploitation of Social Media for Emergency Relief and Preparedness (SMERP)",
-            Short: "WWW '18"
+            Full: "ACL 2020 workshop on Natural Language Processing for Social Media (SocialNLP)",
+            Short: "ACL '20",
         },
-        Authors: "Ritam Dutt, *Kaustubh Hiware, Avijit Ghosh, Rameshwar Bhaskaran",
+        When: "May 2020",
+        Authors: "*Kaustubh Hiware, Ritam Dutt, Sayan Sinha, Sohan Patro, Kripabandhu Ghosh, Saptarshi Ghosh",
     },
     {
         Title: "Emotion detection from touch interactions during text entry on smartphones",
@@ -15,6 +16,7 @@ export const Papers = [
             Full: "International Journal of Human-Computer Studies 2019",
             Short: "IJHCI '19"
         },
+        When: "Oct 2019",
         Authors: "Surjya Ghosh, *Kaustubh Hiware, Niloy Ganguly, Bivas Mitra, Pradipta De",
     },
     {
@@ -24,6 +26,7 @@ export const Papers = [
             Full: "European Conference on Information Retrieval 2019",
             Short:"ECIR '19"
         },
+        When: "Apr 2019",
         Authors: "Paheli Bhattacharya, *Kaustubh Hiware, Subham Rajgaria, Nilay Pochhi, Kripabandhu Ghosh, Saptarshi Ghosh",
     },
     {
@@ -33,16 +36,18 @@ export const Papers = [
             Full: "International Conference on Intelligent User Interfaces, ACM, IUI 2019",
             Short: "IUI '19",
         },
+        When: "Mar 2019",
         Authors: "Surjya Ghosh, *Kaustubh Hiware, Bivas Mitra, Niloy Ganguly, Pradipta De",
     },
     {
-        Title: "NARMADA: Need and Available Resource Managing Assistant for Disasters and Adversities",
-        URL: "https://www.aclweb.org/anthology/2020.socialnlp-1.3/",
+        Title: "Savitr: A system for real-time location extraction from microblogs during emergencies",
+        URL: "https://dl.acm.org/doi/10.1145/3184558.3191623",
         Venue: {
-            Full: "ACL 2020 workshop on Natural Language Processing for Social Media (SocialNLP)",
-            Short: "ACL '20",
+            Full: "WWW 2018 workshop on Exploitation of Social Media for Emergency Relief and Preparedness (SMERP)",
+            Short: "WWW '18"
         },
-        Authors: "*Kaustubh Hiware, Ritam Dutt, Sayan Sinha, Sohan Patro, Kripabandhu Ghosh, Saptarshi Ghosh",
+        When: "Apr 2018",
+        Authors: "Ritam Dutt, *Kaustubh Hiware, Avijit Ghosh, Rameshwar Bhaskaran",
     },
     {
         Title: "A Graph Based Semi-Supervised Approach for Analysis of Derivational Nouns in Sanskrit",
@@ -51,6 +56,7 @@ export const Papers = [
             Full: "ACL 2017 workshop on Graph-based Methods for Natural Language Processing (TextGraphs-11)",
             Short: "ACL '17",
         },
+        When: "Aug 2017",
         Authors: "Amrith Krishna, Pavankumar Satuluri, Harshavardhan Ponnada, Muneeb Ahmed, Gulab Arora, *Kaustubh Hiware, Pawan Goyal",
     },
 ];

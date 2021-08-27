@@ -14,7 +14,17 @@ import Talks from '../data/talks';
 import Education from '../data/education';
 
 export const Content = () => {
-  
+  // somewhat complex object, so formatting earlier on
+  var talkLinkFarm = [];
+  Talks.PreviousTalks.map((talk) => {
+    var talkLinks = [[
+      {text: "- [link]", link: talk.URLs.Primary},
+      {text: " | [video]", link: talk.URLs.Video},
+      {text: " | [slides]", link: talk.URLs.Slides}
+    ]];
+    talkLinkFarm = talkLinkFarm.concat(talkLinks);
+  });
+
   return (
     <Col lg={12} xl={9}>
     <Themer />
@@ -56,7 +66,7 @@ export const Content = () => {
       <div className="content-card-content">
         {Papers.map((paper) => (
           <Timeline
-            When={paper.Venue.Short}
+            When={paper.When}
             Title={paper.Title}
             TitleLink={paper.URL}
             Subtitle={paper.Venue.Full}
@@ -79,27 +89,17 @@ export const Content = () => {
       <div className="content-card-content">
         {Talks.TalkIntro} <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="."/>
         <hr className="breather" />
-        <ul>
-          {Talks.PreviousTalks.map((talk) => (
-            <li className="content-list" key={talk.Title}>
-              {talk.Title}
-              -
-              <PossiblyEmptyLink text=" [link]" href={talk.URLs.Primary} /> {/* link shouldn't be empty, but what the heck I like this abstraction now */}
-              <PossiblyEmptyLink text=" | [video]" href={talk.URLs.Video} alt_text=""/>
-              <PossiblyEmptyLink text=" | [slides]" href={talk.URLs.Slides} alt_text=""/>
-              <br />
-              <div className="content-card-subtitle-displaced">
-                <span className="right-float">
-                  {talk.When}
-                </span>
-                at <PossiblyEmptyLink text={talk.Venue} href={talk.URLs.Venue} alt_text="."/>
-              </div>
-              <p className="content-card-subtitle">
-                {talk.Description}
-              </p>
-            </li>
+        {Talks.PreviousTalks.map((talk, index) => (
+          <Timeline
+            When={talk.When}
+            Title={talk.Title}
+            TitleSupplementaryLinks={talkLinkFarm[index]}
+            Subtitle={"at " + talk.Venue}
+            SubtitleLink={talk.URLs.Venue}
+            DescriptionLine={talk.Description}
+            Description={[]}
+          />
           ))}
-        </ul>
       </div>
     </div>
 
