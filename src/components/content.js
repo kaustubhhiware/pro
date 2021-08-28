@@ -16,7 +16,7 @@ import Education from '../data/education';
 export const Content = () => {
   // somewhat complex object, so formatting earlier on
   var talkLinkFarm = [];
-  Talks.PreviousTalks.map((talk) => {
+  Talks.PreviousTalks.forEach((talk) => {
     var talkLinks = [[
       {text: "- [link]", link: talk.URLs.Primary},
       {text: " | [video]", link: talk.URLs.Video},

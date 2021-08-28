@@ -7,12 +7,22 @@
     background-color: var(--shadow-color);
     color: var(--background-color) !important;
     padding: 0.5em;
-    margin-left: -1.25em !important;
-    padding-left: 1.25em !important;
     font-size: 0.7em;
     font-weight: bolder;
+
+    /* on smaller screens this is left aligned, but larger ones have right aligned */
+    margin-left: calc(var(--gap-timeline-duration) * -1) !important;
+    padding-left: var(--gap-timeline-duration) !important;
+  }
+
+.timeline-content {
+  clear: both;
 }
 
+.timeline-img-column {
+  clear: both;
+  padding: 0;
+}
 
 .timeline-img {
     width: 50%;
@@ -27,6 +37,26 @@
 
 
 @media (min-width: 1280px) {
+  /* right oriented on larger screens */
+  .timeline-item {
+    border-left: 0;
+    padding-left: 0;
+    border-right: 0.25em solid var(--shadow-color);
+    padding-right: 0.75em;
+  }
+
+  .duration {
+    float: right;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    margin-right: calc(var(--gap-timeline-duration) * -1) !important;
+    padding-right: var(--gap-timeline-duration) !important;
+  }
+
+  .timeline-content-column {
+    margin-top: -1.5em;
+  }
+
   .timeline-description {
     font-size: 0.8em;
     line-height: 1.6;
@@ -40,4 +70,8 @@
     width: 96%;
     padding: 2%;
   }
+}
+
+:root {
+  --gap-timeline-duration: 1.25em;
 }

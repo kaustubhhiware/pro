@@ -3,7 +3,7 @@
   color: var(--text-color);
   box-shadow: 10px 10px var(--shadow-color);
   
-  padding: 4vh 2vh;
+  padding: var(--left-padding) 2vh;
   margin-bottom: 0.8em;
 }
 

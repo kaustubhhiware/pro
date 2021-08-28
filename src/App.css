@@ -86,3 +86,7 @@
 .plant{
   --background-image: url('./images/plant.jpeg');
 }
+
+:root {
+  --left-padding: 4vh;
+}
