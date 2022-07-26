@@ -1,6 +1,6 @@
 import React from "react";
 import './themer.css';
-import { Row } from 'react-bootstrap';
+import { Row, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import changeTheme from './../utils/changeTheme.js';
 import circularIncrement from './../utils/utils.js';
 
@@ -20,15 +20,26 @@ export function ToggleThemes() {
   document.documentElement.style.setProperty('--theme-index', (index).toString());
 }
 
+const renderTooltip = (props) => (
+  <Tooltip id="lang-tooltip" {...props}>
+    Change theme
+  </Tooltip>
+);
+
 export const Themer = () => {
   
   return (
     <Row className="themer-row">
-        <button id="themer" onClick={ToggleThemes}>
-          <span role="img" aria-label="theme-switcher" id="themoji">
-            {Themes[circularIncrement(parseInt(ThemeDefault))].Emoji}
-          </span>
-        </button>
+        <OverlayTrigger
+        placement="left"
+        delay={{ show: 250, hide: 400 }}
+        overlay={renderTooltip}>
+          <button id="themer" onClick={ToggleThemes}>
+            <span role="img" aria-label="theme-switcher" id="themoji">
+              {Themes[circularIncrement(parseInt(ThemeDefault))].Emoji}
+            </span>
+          </button>
+        </OverlayTrigger>
 
         <div className="nav-container">
           <a href="#intro" className="navLink">

@@ -43,25 +43,27 @@ export class Timeline extends React.Component {
                 alt_text={this.props.Subtitle} />
             </div>
 
-            <ul className="timeline-description">
-              {this.props.Description.map((line) => (
-                <li className="timeline-list-item" key={line}>
-                  {line}
-                </li>
-              ))}
-            </ul>
+            <div className="timeline-description">
+              {/*
+                Only one of Description (array of strings)
+                or DescriptionLine should be used.
+              */}
+              <ul>
+                {this.props.Description.map((line) => (
+                  <li className="timeline-list-item" key={line}>
+                    {line}
+                  </li>
+                ))}
+              </ul>
 
-          {/*
-            Only one of Description (array of strings)
-            or DescriptionLine should be used.
-          */}
-            <p className="timeline-description">
-              {this.props.DescriptionLine}
-            </p>
+              <p>
+                {this.props.DescriptionLine}
+              </p>
+            </div>
           </Col>
           <Col md={2} lg={1} className="timeline-img-column">
             <img
-              className={"timeline-img" + (this.props.isRight ? "": "")}
+              className={"timeline-img"}
               src={this.props.Logo}
               alt=""/>
           </Col>

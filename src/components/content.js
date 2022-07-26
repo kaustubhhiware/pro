@@ -34,7 +34,7 @@ export const Content = () => {
       <div className="content-card-title">
         Hello, I'm {Bio.FirstName}! 👋
       </div>
-      <div className="content-card-content">
+      <div className="content-card-content" id="intro-content">
         {Bio.Intro} <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="." />
       </div>
     </div>

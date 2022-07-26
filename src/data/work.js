@@ -3,11 +3,24 @@ Images need to be in public folder
 */
 export const Work = [
     {
-        When: "Oct 2019 - Present",
+        When: "Oct 2021 - Present",
+        Role: "Software Engineer, Metadata",
+        Company: {
+            Name: "Mercari Japan",
+            Logo: "/images/mercari.png",
+            URL: "https://jp.mercari.com/",
+        },
+        Description: [
+            "Manage SKU metadata, which in turn is used to enhance search and recommendations.",
+            "Design experiments and infrastructure to leverage crowd-sourced annotation into structured metadata.",
+        ],
+    },
+    {
+        When: "Oct 2019 - Oct 2021",
         Role: "Software Engineer, Search",
         Company: {
             Name: "Mercari US @Tokyo",
-            Logo: "/images/mercari.jpeg",
+            Logo: "/images/mercari-us.jpeg",
             URL: "https://www.mercari.com/about/",
         },
         Description: [

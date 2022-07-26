@@ -3,8 +3,8 @@
   color: var(--text-color);
   box-shadow: 10px 10px var(--shadow-color);
   
-  padding: var(--left-padding) 2vh;
-  margin-bottom: 0.8em;
+  padding: 4vh var(--left-padding);
+  margin-bottom: 2em;
 }
 
 .content-card-title {
@@ -17,6 +17,10 @@
 .content-card-content {
   line-height: 1.5em;
   font-size: 1em;
+}
+
+#intro-content {
+  margin-bottom: 4vh;
 }
 
 .content-card-content a {
@@ -48,15 +52,15 @@
   padding: 0.25em;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .content-card {
       box-shadow: 10px 10px var(--shadow-color);
   }
 
-  .content-card-title {
+  /* .content-card-title {
     font-size: 1.2em;
     margin-bottom: 0.5em;
-  }
+  } */
 
   .content-card-subtitle {
     font-size: 0.7em;

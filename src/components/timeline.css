@@ -17,6 +17,12 @@
 
 .timeline-content {
   clear: both;
+  margin-top: 1em;
+}
+
+.timeline-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .timeline-img-column {
@@ -30,6 +36,7 @@
 }
 
 .timeline-description {
+  margin-top: 0.25em;
   margin-bottom: 0 !important;
   padding-bottom: 1em;
   font-size: 0.9em;
@@ -53,8 +60,17 @@
     padding-right: var(--gap-timeline-duration) !important;
   }
 
+  .timeline-content {
+    margin-top: 0;
+  }
+
   .timeline-content-column {
     margin-top: -1.5em;
+  }
+
+  .timeline-title {
+    font-size: 1em;
+    margin-bottom: 0;
   }
 
   .timeline-description {

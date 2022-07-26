@@ -18,7 +18,7 @@ export const Bio = {
         }
     ],
     Role: "Software Engineer",
-    Location: "Mercari US@Tokyo",
+    Location: "Mercari JP",
     URLs: {
         Twitter: "https://twitter.com/_ofkaus",
         LinkedIn: "https://www.linkedin.com/in/ofkaus/",
@@ -29,7 +29,7 @@ export const Bio = {
         Podcast: "https://techculturepodcast.com",
     },
     Intro: [
-        "I'm a Software Engineer at Mercari US@Tokyo with an inclination towards tech products.\n",
+        "I'm a Software Engineer at Mercari JP with an inclination towards tech products.\n",
         "In free time, I watch anime and take photos. Humor in all things.\n", 
         "I cover interesting trends in SaaS:",
     ],
