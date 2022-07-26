@@ -87,6 +87,10 @@
   --background-image: url('./images/plant.jpeg');
 }
 
+.palm {
+  --background-image: url('./images/palm.png');
+}
+
 :root {
   --left-padding: 4vh;
 }

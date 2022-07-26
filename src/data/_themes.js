@@ -66,6 +66,16 @@ export const Themes = [
         Source: "https://unsplash.com/photos/Gl6GljPtJpo",
     },
     {
+        Name: "palm",
+        Emoji: "🌴",
+        Colors: {
+            BG: "#ff86e1",
+            Text: "#ffffff",
+            Shadow: "#b416f9",
+        },
+        Source: "https://www.reddit.com/r/VaporwaveAesthetics/comments/qqu0u0/a_wallpaper_inspired_me_to_make_this_sun_and_palm/",
+    },
+    {
         Name: "train",
         Emoji: "🚂",
         Colors: {
