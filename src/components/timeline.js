@@ -49,7 +49,7 @@ export class Timeline extends React.Component {
                 or DescriptionLine should be used.
               */}
               <ul>
-                {this.props.Description.map((line) => (
+                {this.props.Description?.map((line) => (
                   <li className="timeline-list-item" key={line}>
                     {line}
                   </li>

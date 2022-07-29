@@ -69,9 +69,9 @@ export const Themes = [
         Name: "palm",
         Emoji: "🌴",
         Colors: {
-            BG: "#ff86e1",
-            Text: "#ffffff",
-            Shadow: "#b416f9",
+            BG: "#fdcefd",
+            Text: "#5C07A6",
+            Shadow: "#ff60cd",
         },
         Source: "https://www.reddit.com/r/VaporwaveAesthetics/comments/qqu0u0/a_wallpaper_inspired_me_to_make_this_sun_and_palm/",
     },
@@ -91,4 +91,4 @@ export const Themes = [
 
 
 export default Themes;
-export const ThemeDefault = "4";
+export const ThemeDefault = "6";

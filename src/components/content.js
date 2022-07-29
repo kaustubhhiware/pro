@@ -52,7 +52,7 @@ export const Content = () => {
             Logo={job.Company.Logo}
             Subtitle={job.Company.Name}
             SubtitleLink={job.Company.URL}
-            Description={job.Description}
+            // Description={job.Description}
           />
         ))}
       </div>

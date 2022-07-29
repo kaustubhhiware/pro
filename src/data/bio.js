@@ -29,8 +29,8 @@ export const Bio = {
         Podcast: "https://techculturepodcast.com",
     },
     Intro: [
-        "I'm a Software Engineer at Mercari JP with an interest in product companies.\n",
-        "In free time, I watch anime and take photos. Humor in all things.\n", 
+        "I'm a Software Engineer at Mercari JP with an interest in product SaaS businesses.\n",
+        "In free time, I watch anime and take pictures. Humor in all things.\n", 
         "I cover interesting trends in SaaS:",
     ],
     PodcastName: "Tech Culture Podcast",
