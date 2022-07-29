@@ -50,11 +50,16 @@
   font-weight: bold;
   background-color: var(--text-color);
   padding: 0.25em;
+  line-height: 1.4; /* Background color overlaps text, so give it some space */
 }
 
 @media (min-width: 768px) {
   .content-card {
       box-shadow: 10px 10px var(--shadow-color);
+  }
+
+  .content-card a:hover {
+    line-height: 1;
   }
 
   /* .content-card-title {

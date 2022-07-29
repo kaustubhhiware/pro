@@ -36,16 +36,6 @@ export const Themes = [
         Source: "https://unsplash.com/photos/bBWHtMOvxKY",
     },
     {
-        Name: "snow",
-        Emoji: "❄️",
-        Colors: {
-            BG: "#1E2636",
-            Text: "#FEB79C",
-            Shadow: "#4F7091",
-        },
-        Source: "https://unsplash.com/photos/jBxee1u2RAU",
-    },
-    {
         Name: "mountain",
         Emoji: "⛰️",
         Colors: {
@@ -56,15 +46,25 @@ export const Themes = [
         Source: "https://unsplash.com/photos/bBL4o4BJxag",
     },
     {
-        Name: "plant",
-        Emoji: "🌱",
+        Name: "snow",
+        Emoji: "❄️",
         Colors: {
-            BG: "#519D7B",
-            Text: "#06231F",
-            Shadow: "#073127",
+            BG: "#1E2636",
+            Text: "#FEB79C",
+            Shadow: "#4F7091",
         },
-        Source: "https://unsplash.com/photos/Gl6GljPtJpo",
+        Source: "https://unsplash.com/photos/jBxee1u2RAU",
     },
+    // {
+    //     Name: "plant",
+    //     Emoji: "🌱",
+    //     Colors: {
+    //         BG: "#519D7B",
+    //         Text: "#06231F",
+    //         Shadow: "#073127",
+    //     },
+    //     Source: "https://unsplash.com/photos/Gl6GljPtJpo",
+    // },
     {
         Name: "palm",
         Emoji: "🌴",
@@ -91,4 +91,4 @@ export const Themes = [
 
 
 export default Themes;
-export const ThemeDefault = "6";
+export const ThemeDefault = "3";
