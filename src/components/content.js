@@ -18,9 +18,9 @@ export const Content = () => {
   var talkLinkFarm = [];
   Talks.PreviousTalks.forEach((talk) => {
     var talkLinks = [[
-      {text: "- [link]", link: talk.URLs.Primary},
-      {text: " | [video]", link: talk.URLs.Video},
-      {text: " | [slides]", link: talk.URLs.Slides}
+      {text: "-  🔗", link: talk.URLs.Primary},
+      {text: "  📹", link: talk.URLs.Video},
+      {text: "  📄", link: talk.URLs.Slides}
     ]];
     talkLinkFarm = talkLinkFarm.concat(talkLinks);
   });
