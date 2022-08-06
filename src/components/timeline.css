@@ -70,6 +70,12 @@
     margin-top: -1.5em;
   }
 
+  .timeline-img-column {
+    margin-top: -1.5em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+  }
+
   .timeline-title {
     font-size: 1em;
     margin-bottom: 0;
@@ -85,9 +91,9 @@
   }
 
 .timeline-img {
-    min-width: 96%;
-    max-width: 96%;
-    padding: 2%;
+    min-width: 90%;
+    max-width: 90%;
+    padding: 5%;
   }
 }
 

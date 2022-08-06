@@ -46,7 +46,7 @@ export const Work = [
         Role: "Software Engineer Intern",
         Company: {
             Name: "Schlumberger, Pune Technology Center",
-            Logo: "/images/slb.jpg",
+            Logo: "/images/schlumberger.png",
             URL: "https://companies.naukri.com/putc-jobs/jobs/?id=112&srptemp=1&jdtemp=1&qp=PUTCNAUK",
         },
         Description: [

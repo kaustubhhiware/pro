@@ -41,7 +41,7 @@ export const Placard = () => {
       
       <OverlayTrigger
         placement="bottom"
-        delay={{ show: 250, hide: 400 }}
+        delay={{ show: 150, hide: 400 }}
         overlay={renderTooltip}>
         <button id="lang-switcher" onClick={ToggleLang}>
           <span role="img" aria-label="lang-switcher" id="langemoji">

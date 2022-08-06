@@ -20,7 +20,13 @@ export class Timeline extends React.Component {
           {this.props.When}
         </span>
         <Row className="timeline-content">
-          <Col md={12} lg={11} className="timeline-content-column">
+          { this.props.Logo && <Col md={3} lg={2} className={"timeline-img-column"}>
+            <img
+              className={"timeline-img"}
+              src={this.props.Logo}
+              alt=""/>
+          </Col>}
+          <Col md={9} lg={10} className="timeline-content-column">
             <div className="timeline-title">
               <PossiblyEmptyLink
                 text={this.props.Title}
@@ -60,12 +66,6 @@ export class Timeline extends React.Component {
                 {this.props.DescriptionLine}
               </p>
             </div>
-          </Col>
-          <Col md={2} lg={1} className="timeline-img-column">
-            <img
-              className={"timeline-img"}
-              src={this.props.Logo}
-              alt=""/>
           </Col>
         </Row>
       </div>
