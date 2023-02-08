@@ -30,7 +30,7 @@ export const Content = () => {
     <Themer />
 
     {/* Intro */}
-    <div className="content-card" id="intro">
+    <div className="content-card glitch" id="intro">
       <div className="content-card-title">
         Hello, I'm {Bio.FirstName}! 👋
       </div>
@@ -40,18 +40,19 @@ export const Content = () => {
     </div>
 
     {/* Experience */}
-    <div className="content-card" id="work">
+    <div className="content-card glitch" id="work">
       <div className="content-card-title">
         Work Experience
       </div>
       <div className="content-card-content">
         {Work.map((job) => (
-          <Timeline 
+          <Timeline
             When={job.When}
             Title={job.Role}
             Logo={job.Company.Logo}
             Subtitle={job.Company.Name}
             SubtitleLink={job.Company.URL}
+            key={job.Role}
             // Description={job.Description}
           />
         ))}
@@ -59,7 +60,7 @@ export const Content = () => {
     </div>
 
     {/* Publications */}
-    <div className="content-card" id="publications">
+    <div className="content-card glitch" id="publications">
       <div className="content-card-title">
         Publications
       </div>
@@ -72,6 +73,7 @@ export const Content = () => {
             Subtitle={paper.Venue.Full}
             DescriptionLine={paper.Authors}
             Description={[]}
+            key={paper.Title}
           />
         ))}
 
@@ -82,7 +84,7 @@ export const Content = () => {
     </div>
 
     {/* Talks */}
-    <div className="content-card" id="talks">
+    <div className="content-card glitch" id="talks">
       <div className="content-card-title">
         Talks
       </div>
@@ -98,13 +100,14 @@ export const Content = () => {
             SubtitleLink={talk.URLs.Venue}
             DescriptionLine={talk.Description}
             Description={[]}
+            key={talk.Title}
           />
           ))}
       </div>
     </div>
 
     {/* Education */}
-    <div className="content-card" id="education">
+    <div className="content-card glitch" id="education">
       <div className="content-card-title">
         Education
       </div>
@@ -117,6 +120,7 @@ export const Content = () => {
             TitleLink={school.URL}
             Subtitle={school.Degree}
             Description={school.Description}
+            key={school.Name}
           />
         ))}
       </div>

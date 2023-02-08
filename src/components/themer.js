@@ -3,11 +3,26 @@ import './themer.css';
 import { Row, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import changeTheme from './../utils/changeTheme.js';
 import circularIncrement from './../utils/utils.js';
+import { PowerGlitch } from 'powerglitch'
 
 import {Themes, ThemeDefault} from '../data/_themes';
 import { MdHome, MdWork, MdModeEdit, MdMic, MdSchool } from "react-icons/md";
 
+export function ToggleThemesWrapper() {
+  try {
+    PowerGlitch.glitch('.glitch', {
+      playMode: 'always',
+      timing: {
+        duration: 1500,
+        iterations: 1,
+      }
+    })
+  } catch(error) {
+    console.log(error);
+  }
 
+  setTimeout(ToggleThemes, 1000)
+}
 
 export function ToggleThemes() {
   let index = window.getComputedStyle(document.documentElement).getPropertyValue('--theme-index');
@@ -21,7 +36,7 @@ export function ToggleThemes() {
 }
 
 const renderTooltip = (props) => (
-  <Tooltip id="lang-tooltip" {...props}>
+  <Tooltip id="theme-tooltip" {...props}>
     Change theme
   </Tooltip>
 );
@@ -34,7 +49,7 @@ export const Themer = () => {
         placement="left"
         delay={{ show: 250, hide: 400 }}
         overlay={renderTooltip}>
-          <button id="themer" onClick={ToggleThemes}>
+          <button id="themer" onClick={ToggleThemesWrapper}>
             <span role="img" aria-label="theme-switcher" id="themoji">
               {Themes[circularIncrement(parseInt(ThemeDefault))].Emoji}
             </span>

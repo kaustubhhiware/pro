@@ -31,7 +31,7 @@ export const Placard = () => {
   
   return (
     <Col lg={12} xl={3}>
-    <div className="sidecard">
+    <div className="sidecard glitch">
     <img src={profilePic} className="placard-image" alt="Profile"/>
     
     <div className="placard-title">
