@@ -38,7 +38,7 @@ export const Bio = {
         Number: "4",
         URL: "https://www.csauthors.net/distance/paul-erdos/kaustubh-hiware",
     },
-    GATrackingID: "UA-98481315-12",
+    GATrackingID: "G-13DZQ5P64Z",
 };
 
 export default Bio;
