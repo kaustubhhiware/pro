@@ -12,6 +12,12 @@ I have tried to keep most things customizable - for most parts.
 
 Color palettes have been provided by [u/marinemotion](https://www.reddit.com/user/marinemotion/)
 
+## Development
+
+``
+npm run start
+```
+
 ## Building the pages
 
 The solution is slightly hacky, but hey it works

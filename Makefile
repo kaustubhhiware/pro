@@ -1,3 +1,7 @@
+start:
+	export NODE_OPTIONS=--openssl-legacy-provider
+	npm run start
+
 build:
 	npm run build
 	rm -rf docs
