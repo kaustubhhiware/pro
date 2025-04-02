@@ -12,11 +12,11 @@
 }
 
 .love {
-  color: red;
+  color: #B91C1C; /* Blood red */
 }
 
 .love a:hover {
-  color: red;
+  color: #B91C1C; /* Blood red */
 }
 
 .plain-jane,

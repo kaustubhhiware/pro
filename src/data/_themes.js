@@ -16,6 +16,16 @@ export const Themes = [
         Source: "https://unsplash.com/photos/okVXy9tG3KY",
     },
     {
+        Name: "sakura",
+        Emoji: "🌸",
+        Colors: {
+            BG: "#F5E8ED",
+            Text: "maroon",
+            Shadow: "#E83261",
+        },
+        Source: "https://unsplash.com/photos/bBWHtMOvxKY",
+    },
+    {
         Name: "waves",
         Emoji: "🌊",
         Colors: {
@@ -25,36 +35,26 @@ export const Themes = [
         },
         Source: "https://wallpapercave.com/the-great-wave-off-kanagawa-hd-wallpapers",
     },
-    {
-        Name: "sakura",
-        Emoji: "🌸",
-        Colors: {
-            BG: "#F5E8ED",
-            Text: "black",
-            Shadow: "#E83261",
-        },
-        Source: "https://unsplash.com/photos/bBWHtMOvxKY",
-    },
-    {
-        Name: "mountain",
-        Emoji: "⛰️",
-        Colors: {
-            BG: "#EDEBEC",
-            Text: "#327B8E",
-            Shadow: "#013C48",
-        },
-        Source: "https://unsplash.com/photos/bBL4o4BJxag",
-    },
-    {
-        Name: "snow",
-        Emoji: "❄️",
-        Colors: {
-            BG: "#1E2636",
-            Text: "#FEB79C",
-            Shadow: "#4F7091",
-        },
-        Source: "https://unsplash.com/photos/jBxee1u2RAU",
-    },
+    // {
+    //     Name: "mountain",
+    //     Emoji: "⛰️",
+    //     Colors: {
+    //         BG: "#EDEBEC",
+    //         Text: "#327B8E",
+    //         Shadow: "#013C48",
+    //     },
+    //     Source: "https://unsplash.com/photos/bBL4o4BJxag",
+    // },
+    // {
+    //     Name: "snow",
+    //     Emoji: "❄️",
+    //     Colors: {
+    //         BG: "#1E2636",
+    //         Text: "#FEB79C",
+    //         Shadow: "#4F7091",
+    //     },
+    //     Source: "https://unsplash.com/photos/jBxee1u2RAU",
+    // },
     // {
     //     Name: "plant",
     //     Emoji: "🌱",
@@ -65,30 +65,30 @@ export const Themes = [
     //     },
     //     Source: "https://unsplash.com/photos/Gl6GljPtJpo",
     // },
-    {
-        Name: "palm",
-        Emoji: "🌴",
-        Colors: {
-            BG: "#fdcefd",
-            Text: "#5C07A6",
-            Shadow: "#ff60cd",
-        },
-        Source: "https://www.reddit.com/r/VaporwaveAesthetics/comments/qqu0u0/a_wallpaper_inspired_me_to_make_this_sun_and_palm/",
-    },
-    {
-        Name: "train",
-        Emoji: "🚂",
-        Colors: {
-            BG: "#F9F3F5",
-            Text: "#EC5A01",
-            Shadow: "#FEA907",
-        },
-        Source: "https://unsplash.com/photos/PHyF2mCMei0",
-    },
+    // {
+    //     Name: "palm",
+    //     Emoji: "🌴",
+    //     Colors: {
+    //         BG: "#fdcefd",
+    //         Text: "#5C07A6",
+    //         Shadow: "#ff60cd",
+    //     },
+    //     Source: "https://www.reddit.com/r/VaporwaveAesthetics/comments/qqu0u0/a_wallpaper_inspired_me_to_make_this_sun_and_palm/",
+    // },
+    // {
+    //     Name: "train",
+    //     Emoji: "🚂",
+    //     Colors: {
+    //         BG: "#F9F3F5",
+    //         Text: "#EC5A01",
+    //         Shadow: "#FEA907",
+    //     },
+    //     Source: "https://unsplash.com/photos/PHyF2mCMei0",
+    // },
 ];
 
 
 
 
 export default Themes;
-export const ThemeDefault = "3";
+export const ThemeDefault = "1";
