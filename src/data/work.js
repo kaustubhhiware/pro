@@ -4,7 +4,7 @@ Images need to be in public folder
 export const Work = [
     {
         When: "Oct 2021 - Present",
-        Role: "Software Engineer, Metadata",
+        Role: "Senior Software Engineer, Business Partner Product",
         Company: {
             Name: "Mercari Japan",
             Logo: "/images/mercari.png",
@@ -54,6 +54,9 @@ export const Work = [
             "Wrote a DLS-compliant Angular frontend for field experts in South-east Asia.",
         ],
     },
+];
+/**
+ * Removed
     {
         When: "May 2017 - Jul 2017",
         Role: "Backend Developer Intern",
@@ -64,6 +67,5 @@ export const Work = [
         },
         Description: [],
     },
-];
-
+ */
 export default Work;
