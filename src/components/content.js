@@ -35,7 +35,8 @@ export const Content = () => {
         Hello, I'm {Bio.FirstName}! 👋
       </div>
       <div className="content-card-content" id="intro-content">
-        {Bio.Intro} <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="." />
+        {Bio.Intro}
+        {/* <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="." />. */}
       </div>
     </div>
 
@@ -71,7 +72,7 @@ export const Content = () => {
             Title={paper.Title}
             TitleLink={paper.URL}
             Subtitle={paper.Venue.Full}
-            DescriptionLine={paper.Authors}
+            // DescriptionLine={paper.Authors}
             Description={[]}
             key={paper.Title}
           />
@@ -89,7 +90,7 @@ export const Content = () => {
         Talks
       </div>
       <div className="content-card-content">
-        {Talks.TalkIntro} <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="."/>
+        {Talks.TalkIntro} <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="."/>.
         <hr className="breather" />
         {Talks.PreviousTalks.map((talk, index) => (
           <Timeline
