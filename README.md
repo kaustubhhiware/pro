@@ -14,13 +14,13 @@ Color palettes have been provided by [u/marinemotion](https://www.reddit.com/use
 
 ## Development
 
-``
+```
 npm run start
 ```
 
 ## Building the pages
 
-The solution is slightly hacky, but hey it works
+The solution is hacky, but it works.
 The repository serves the `docs` folder, there are no docs - sorry.
 
 ```sh
