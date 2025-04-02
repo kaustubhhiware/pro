@@ -4,7 +4,7 @@ Talks: Following URLs assumed mandatory: Primary
 Venue, Video, Slides are optional
 */
 export const Talks = {
-    TalkIntro: "I love to share my learnings. In 2021, I got interested in how Saas (Software-as-a-Service) businesses operate. I run a fortnightly podcast to share any interesting insights:",
+    TalkIntro: "I love to share my learnings. I ran a fortnightly podcast to cover interesting trends in the Saas space (Software-as-a-Service) businesses operate: ",
     PreviousTalks: [
         {
             Title: "Using NLP for disaster management",
