@@ -57,7 +57,7 @@
   color: var(--shadow-color);
 }
 
-#lang-switcher, #langemoji {
+#lang-switcher, #next-lang-emoji {
   padding: 0;
   border: 0;
   background-color: var(--background-color);

@@ -37,7 +37,7 @@ export function ToggleThemes() {
 
 const renderTooltip = (props) => (
   <Tooltip id="theme-tooltip" {...props}>
-    Change theme
+    Easter egg! (2/3)
   </Tooltip>
 );
 

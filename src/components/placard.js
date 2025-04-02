@@ -6,7 +6,7 @@ import changeLang from  './../utils/changeLang.js';
 
 import {Bio, LangDefault} from '../data/bio';
 import profilePic from './../images/kaustubh.png';
-import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaGithub, /*FaInstagram,*/ FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { SiGooglescholar } from "react-icons/si";
 import { IoMail } from "react-icons/io5";
 
@@ -23,7 +23,7 @@ export function ToggleLang() {
 
 const renderTooltip = (props) => (
   <Tooltip id="lang-tooltip" {...props}>
-    Change language
+    Easter egg! (1/3)
   </Tooltip>
 );
 
@@ -39,12 +39,13 @@ export const Placard = () => {
         {Bio.Name[LangDefault].Name}
       </span>
       
+      <span>&nbsp;&nbsp;</span>
       <OverlayTrigger
         placement="bottom"
         delay={{ show: 150, hide: 400 }}
         overlay={renderTooltip}>
         <button id="lang-switcher" onClick={ToggleLang}>
-          <span role="img" aria-label="lang-switcher" id="langemoji">
+          <span role="img" aria-label="lang-switcher" id="next-lang-emoji">
             {Bio.Name[circularIncrement(parseInt(LangDefault), Bio.Name.length)].Emoji}
           </span>
         </button>
@@ -68,9 +69,9 @@ export const Placard = () => {
     <a href={Bio.URLs.LinkedIn} rel="noopener noreferrer" target="_blank">
       <FaLinkedinIn />
     </a>
-    <a href={Bio.URLs.Instagram} rel="noopener noreferrer" target="_blank">
+    {/* <a href={Bio.URLs.Instagram} rel="noopener noreferrer" target="_blank">
       <FaInstagram />
-    </a>
+    </a> */}
     <a href={Bio.URLs.Github} rel="noopener noreferrer" target="_blank">
       <FaGithub />
     </a>

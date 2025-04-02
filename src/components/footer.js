@@ -1,8 +1,14 @@
 import React from "react";
 import './footer.css';
 
+import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { FaHeart} from 'react-icons/fa';
 
+const renderTooltip = (props) => (
+  <Tooltip id="theme-tooltip" {...props}>
+    Easter egg! (3/3)
+  </Tooltip>
+);
 
 export class Footer extends React.Component {
   years() {
@@ -22,10 +28,16 @@ export class Footer extends React.Component {
     return (
       <div className="footer">
         Made with &nbsp;
-        <a className="love" href="https://youtu.be/dQw4w9WgXcQ"
-          target="_blank" rel="noopener noreferrer">
-          <FaHeart/>
-        </a>
+        <OverlayTrigger
+        placement="top"
+        delay={{ show: 250, hide: 400 }}
+        overlay={renderTooltip}>
+          <a className="love" href="https://youtu.be/dQw4w9WgXcQ"
+            target="_blank" rel="noopener noreferrer">
+              <FaHeart />
+          </a>
+        </OverlayTrigger>
+
         &nbsp; by &nbsp;
         <a href="https://kaustubhhiware.in" className="plain-jane"
           target="_blank" rel="noopener noreferrer">
