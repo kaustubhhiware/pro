@@ -15,7 +15,7 @@ Color palettes have been provided by [u/marinemotion](https://www.reddit.com/use
 ## Development
 
 ```
-npm run start
+make start
 ```
 
 ## Building the pages

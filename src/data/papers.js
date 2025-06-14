@@ -13,7 +13,7 @@ export const Papers = [
         Title: "Emotion detection from touch interactions during text entry on smartphones",
         URL: "https://www.sciencedirect.com/science/article/abs/pii/S1071581918304889",
         Venue: {
-            Full: "International Journal of Human-Computer Studies 2019",
+            Full: "International Journal of Human-Computer Studies, 2019",
             Short: "IJHCI '19"
         },
         When: "Oct 2019",
@@ -23,7 +23,7 @@ export const Papers = [
         Title: "A comparative study of summarization algorithms applied to legal case judgments",
         URL: "https://www.sciencedirect.com/science/article/abs/pii/S1071581918304889",
         Venue: {
-            Full: "European Conference on Information Retrieval 2019",
+            Full: "European Conference on Information Retrieval, 2019",
             Short:"ECIR '19"
         },
         When: "Apr 2019",

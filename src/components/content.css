@@ -3,13 +3,13 @@
   color: var(--text-color);
   box-shadow: 10px 10px var(--shadow-color);
   
-  padding: 4vh var(--left-padding);
+  padding: 4vh;
   margin-bottom: 2em;
 }
 
 .content-card-title {
   font-weight: bolder;
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 1em;
   margin-left: 0.5em;
 }
@@ -47,26 +47,28 @@
 
 .content-card a:hover {
   color: var(--background-color);
-  font-weight: bold;
   background-color: var(--text-color);
-  padding: 0.25em;
   border-radius: 0.25em;
-  line-height: 1.4; /* Background color overlaps text, so give it some space */
+  /*
+  font-weight: bold; // previous iteration where text became bigger on hover
+  padding: 0.25em;
+  line-height: 1.4; //Background color overlaps text, so give it some space
+  */
 }
 
 @media (min-width: 768px) {
   .content-card {
-      box-shadow: 10px 10px var(--shadow-color);
+      padding: 8vh;
   }
 
   .content-card a:hover {
     line-height: 1;
   }
 
-  /* .content-card-title {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-  } */
+  .content-card-title {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+  }
 
   .content-card-subtitle {
     font-size: 0.7em;
