@@ -4,6 +4,8 @@ import './footer.css';
 import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { FaHeart} from 'react-icons/fa';
 
+import Bio from '../data/bio';
+
 const renderTooltip = (props) => (
   <Tooltip id="theme-tooltip" {...props}>
     Easter egg! (3/3)
@@ -41,7 +43,7 @@ export class Footer extends React.Component {
         &nbsp; by &nbsp;
         <a href="https://kaustubhhiware.in" className="plain-jane"
           target="_blank" rel="noopener noreferrer">
-          Kaustubh Hiware
+          {Bio.FullName}
         </a>
         &nbsp; © {this.years()}
         &nbsp; 

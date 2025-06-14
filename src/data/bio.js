@@ -1,5 +1,6 @@
 export const Bio = {
     FirstName: "Kaustubh",
+    FullName: "Kaustubh Hiware",
     Name: [
         {
             Lang: "English",
@@ -30,7 +31,7 @@ export const Bio = {
     },
     Intro: [
         "I'm a Senior Software Engineer at Mercari JP with an interest in product SaaS businesses.\n",
-        "In free time, I go on roadtrips and take pictures. I find humor in all things.\n", 
+        "In free time, I go on roadtrips around Japan and take pictures. I find humor in all things.\n", 
         // "I used to talk about SaaS business on ",
     ],
     PodcastName: "Tech Culture Podcast",
