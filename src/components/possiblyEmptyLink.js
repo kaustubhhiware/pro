@@ -8,6 +8,9 @@ export class PossiblyEmptyLink extends React.Component {
     2. If href and no alt text, return text with class formatting
     3. If href and alt text, return text, no formatting - shouldn't reduce font-size
   */
+  /*
+    prop.is_icon - adds a class for conditional css for icons
+  */
 
   render() {
     if (!this.props.href) {
@@ -19,7 +22,8 @@ export class PossiblyEmptyLink extends React.Component {
         <a href={this.props.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="possibly-empty-link"
+          className={`${this.props.is_icon ? 'icon-link' : 'possibly-empty-link'}`}
+          title={this.props.hover_text || ''}
           >
           {this.props.text}
         </a>

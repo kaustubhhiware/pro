@@ -2,6 +2,9 @@ import React from "react";
 import './content.css';
 import './base.css';
 import { Col } from 'react-bootstrap';
+import { IoIosLink } from "react-icons/io";
+import { FaYoutube } from 'react-icons/fa';
+import { RiSlideshowFill } from "react-icons/ri";
 
 import Themer from './themer';
 import PossiblyEmptyLink from "./possiblyEmptyLink";
@@ -18,9 +21,9 @@ export const Content = () => {
   var talkLinkFarm = [];
   Talks.PreviousTalks.forEach((talk) => {
     var talkLinks = [[
-      {text: "-  🔗", link: talk.URLs.Primary},
-      {text: "  📹", link: talk.URLs.Video},
-      {text: "  📄", link: talk.URLs.Slides}
+      {text: <span>- <IoIosLink /></span>, link: talk.URLs.Primary, hover_text: "Link"},
+      {text: <span> <FaYoutube /></span>, link: talk.URLs.Video, hover_text: "Video"},
+      {text: <span> <RiSlideshowFill /></span>, link: talk.URLs.Slides, hover_text:"Slides"}
     ]];
     talkLinkFarm = talkLinkFarm.concat(talkLinks);
   });

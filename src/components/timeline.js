@@ -38,6 +38,8 @@ export class Timeline extends React.Component {
                   text={supplement.text}
                   href={supplement.link}
                   alt_text=""
+                  is_icon={true}
+                  hover_text={supplement.hover_text}
                   key={index} />
               ))}
             </div>
