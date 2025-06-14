@@ -28,6 +28,17 @@ class App extends React.Component {
   }
 
   render() {
+    console.log('Easter egg 4/5 - The links light up like a bulb when you hover over them.');
+    console.log('Easter egg 5/5 - You have to find that yourself. It\'s different on desktop and mobile.');
+    console.log('Once you find it, email me with the title \'Easter egg 5 ?????\' at ', Bio.URLs.Email)
+    /*
+      You sly dog, you come to the source code, looking for the fifth easter egg ?
+      I suppose you deserve to find out.
+      Desktop - The scroll bar switches the text and accent color on hover.
+      Mobile - The timeline moves to the left, desktop's timeline is right-aligned.
+      Email me with the title "I see through your tricks, task master"
+    */
+
     return (
       <div className="App">
         <CustomPreloader time={1200}>
