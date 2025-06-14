@@ -16,16 +16,6 @@ export const Themes = [
         Source: "https://unsplash.com/photos/okVXy9tG3KY",
     },
     {
-        Name: "sakura",
-        Emoji: "🌸",
-        Colors: {
-            BG: "#F5E8ED",
-            Text: "maroon",
-            Shadow: "#E83261",
-        },
-        Source: "https://unsplash.com/photos/bBWHtMOvxKY",
-    },
-    {
         Name: "waves",
         Emoji: "🌊",
         Colors: {
@@ -34,6 +24,16 @@ export const Themes = [
             Shadow: "#346A84",
         },
         Source: "https://wallpapercave.com/the-great-wave-off-kanagawa-hd-wallpapers",
+    },
+    {
+        Name: "sakura",
+        Emoji: "🌸",
+        Colors: {
+            BG: "#F5E8ED",
+            Text: "maroon",
+            Shadow: "#E83261",
+        },
+        Source: "https://unsplash.com/photos/bBWHtMOvxKY",
     },
     // {
     //     Name: "mountain",
@@ -91,4 +91,4 @@ export const Themes = [
 
 
 export default Themes;
-export const ThemeDefault = "1";
+export const ThemeDefault = "0";
