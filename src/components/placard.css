@@ -9,6 +9,14 @@
   padding: 5%;
   margin-bottom: 2em;
 }
+@media (min-width: 1280px) {
+  .sidecard {
+    position:sticky;
+    top: 2em;
+    width: 100%;
+    box-shadow: 10px 10px var(--accent-color);
+  }
+}
 
 .placard-image {
   width: 90%;
@@ -20,14 +28,29 @@
   font-size: 2em;
   font-weight: bolder;
 }
+@media (min-width: 1280px) {
+  .placard-title {
+    font-size: 1em;
+  }
+}
 
 .placard-role {
   margin-top: 0.25em;
+}
+@media (min-width: 1280px) {
+  .placard-role {
+    font-size: 0.8em;
+  }
 }
 
 .placard-location {
   margin-top: 0.25em;
   font-weight: bold;
+}
+@media (min-width: 1280px) {
+  .placard-location {
+    font-size: 0.6em;
+  }
 }
 
 .social {
@@ -43,18 +66,23 @@
   color: var(--secondary-color);
   font-size: 1em;
 }
+@media (min-width: 1280px) {
+  .social a {
+    font-size: 0.7em;
+  }
+}
 
 .social a:last-child{
   margin-right: 0;
 }
 
+.social a:hover{
+  color: var(--accent-color);
+}
+
 /* physical lines within cards */
 .liner {
   border: 1px solid var(--accent-color);
-}
-
-.social a:hover{
-  color: var(--accent-color);
 }
 
 #lang-switcher, #next-lang-emoji {
@@ -65,29 +93,4 @@
 
 #lang-switcher {
   font-size: 0.75em;
-}
-
-@media (min-width: 1280px) {
-  .sidecard {
-    position:sticky;
-    top: 2em;
-    width: 100%;
-    box-shadow: 10px 10px var(--accent-color);
-  }
-
-  .social a {
-    font-size: 0.7em;
-  }
-
-  .placard-title {
-    font-size: 1em;
-  }
-
-  .placard-role {
-    font-size: 0.8em;
-  }
-
-  .placard-location {
-    font-size: 0.6em;
-  }
 }

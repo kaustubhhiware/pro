@@ -6,7 +6,6 @@ import circularIncrement from './../utils/utils.js';
 import { PowerGlitch } from 'powerglitch'
 
 import {Themes, ThemeDefault} from '../data/_themes';
-import { MdHome, MdWork, MdModeEdit, MdMic, MdSchool } from "react-icons/md";
 
 export function ToggleThemesWrapper() {
   try {
@@ -55,24 +54,6 @@ export const Themer = () => {
             </span>
           </button>
         </OverlayTrigger>
-
-        <div className="nav-container">
-          <a href="#intro" className="navLink">
-            <MdHome className="navIcon" />
-          </a>
-          <a href="#work" className="navLink">
-            <MdWork className="navIcon" />
-          </a>
-          <a href="#publications" className="navLink">
-            <MdModeEdit className="navIcon" />
-          </a>
-          <a href="#talks" className="navLink">
-            <MdMic className="navIcon" />
-          </a>
-          <a href="#education" className="navLink">
-            <MdSchool className="navIcon" />
-          </a>
-        </div>
     </Row>
     );
   };

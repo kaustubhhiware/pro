@@ -2,16 +2,12 @@
   float: right;
 }
 
-.hidden {
-  display: none;
-}
-
 @media (min-width: 1280px) {
   .right-float {
     margin-right: 2em;
   }
+}
 
-  .possibly-empty-link {
-    font-size: 0.7em;
-  }
+.hidden {
+  display: none;
 }

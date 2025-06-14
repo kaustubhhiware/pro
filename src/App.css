@@ -39,8 +39,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+}
 
-  /* Scrollbar */
+/* Scrollbar styles - only apply on larger screens */
+@media (min-width: 1280px) {
   ::-webkit-scrollbar {
     width: 0.5em;
   }

@@ -6,6 +6,13 @@
   margin-left: 0 !important;
   z-index: 1; /*float above work images */
 }
+@media (min-width: 1280px) {
+  .themer-row {
+    width: 100%;
+    top: 2em;
+    right: 0;
+  }
+}
 
 #themer {
   background-color: var(--next-primary-color);
@@ -19,6 +26,12 @@
   padding: 1.5vh;
   font-size: 1.5em;
   margin-bottom: 0.5em;
+}
+@media (min-width: 1280px) {
+  #themer{
+    padding: 1vh;
+    font-size: 1em;
+  }
 }
 
 #themer:hover {
@@ -42,41 +55,15 @@
 
   display: none;
 }
-
-.navLink {
-  padding-right: 0.25em;
-  height: 2em;
-}
-
-.navIcon {
-  color: var(--secondary-color);
-  font-size: 1.5em;
-}
-
 @media (min-width: 1280px) {
-  .themer-row {
-    width: 100%;
-    top: 2em;
-    right: 0;
-  }
-
-  #themer{
-    padding: 1vh;
-    font-size: 1em;
-  }
-  
   .nav-container {
     box-shadow: 10px 10px var(--accent-color);
     height: 2em;
     padding-top: 0;
-
-    /* Not really feeling the navbar tbh */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
   }
+}
 
-  .navIcon {
-    font-size: 1em;
-  }
+.navLink {
+  padding-right: 0.25em;
+  height: 2em;
 }

@@ -2,6 +2,14 @@
     border-left: 0.25em solid var(--accent-color);
     padding-left: 0.75em;
 }
+@media (min-width: 1280px) {
+  .timeline-item {
+    border-left: 0;
+    padding-left: 0;
+    border-right: 0.25em solid var(--accent-color);
+    padding-right: 0.75em;
+  }
+}
 
 .duration {
     background-color: var(--accent-color);
@@ -14,20 +22,40 @@
     margin-left: calc(var(--gap-timeline-duration) * -1) !important;
     padding-left: var(--gap-timeline-duration) !important;
   }
+@media (min-width: 1280px) {
+  .duration {
+    float: right;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    margin-right: calc(var(--gap-timeline-duration) * -1) !important;
+    padding-right: var(--gap-timeline-duration) !important;
+  }
+}
 
 .timeline-content {
   clear: both;
   margin-top: 1em;
 }
+@media (min-width: 1280px) {
+  .timeline-content {
+    margin-top: 0;
+  }
+}
 
 .timeline-title {
-  font-size: 1em;
   margin-bottom: 0.5em;
 }
 
 .timeline-img-column {
   clear: both;
   padding: 0;
+}
+@media (min-width: 1280px) {
+  .timeline-img-column {
+    margin-top: -1.5em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+  }
 }
 
 .timeline-img {
@@ -36,6 +64,13 @@
     padding: 2%;
     height: auto;
 }
+@media (min-width: 1280px) {
+  .timeline-img {
+    min-width: 90%;
+    max-width: 90%;
+    padding: 5%;
+  }
+}
 
 .timeline-description {
   margin-top: 0.25em;
@@ -43,57 +78,20 @@
   padding-bottom: 1em;
   font-size: 0.9em;
 }
-
-
 @media (min-width: 1280px) {
-  /* right oriented on larger screens */
-  .timeline-item {
-    border-left: 0;
-    padding-left: 0;
-    border-right: 0.25em solid var(--accent-color);
-    padding-right: 0.75em;
-  }
-
-  .duration {
-    float: right;
-    padding: 0.1em;
-    padding-left: 0.5em;
-    margin-right: calc(var(--gap-timeline-duration) * -1) !important;
-    padding-right: var(--gap-timeline-duration) !important;
-  }
-
-  .timeline-content {
-    margin-top: 0;
-  }
-
-  .timeline-content-column {
-    margin-top: -1.5em;
-  }
-
-  .timeline-img-column {
-    margin-top: -1.5em;
-    padding-right: 1em;
-    padding-bottom: 1em;
-  }
-
-  .timeline-title {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-  }
-
   .timeline-description {
     font-size: 0.8em;
     line-height: 1.6;
   }
+}
+
+@media (min-width: 1280px) {
+  .timeline-content-column {
+    margin-top: -1.5em;
+  }
 
   .timeline-subtitle {
     font-size: 0.8em;
-  }
-
-.timeline-img {
-    min-width: 90%;
-    max-width: 90%;
-    padding: 5%;
   }
 }
 

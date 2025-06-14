@@ -10,7 +10,7 @@ export const Themes = [
         Emoji: "🌸",
         Colors: {
             Primary: "#F5E8ED",
-            Secondary: "maroon",
+            Secondary: "#800000",
             Accent: "#E83261",
         },
         Source: "https://unsplash.com/photos/bBWHtMOvxKY",
@@ -32,10 +32,6 @@ export const Themes = [
             Primary: "#86421A",
             Secondary: "#F9D87C",
             Accent: "#E35720",
-
-            // Primary: "#7A3E00",
-            // Secondary: "#FFEFB1",
-            // Accent: "#E58E2F",
         },
         Source: "https://unsplash.com/photos/a-close-up-of-a-tree-with-red-and-yellow-leaves-XTzQ9Z2jZgI",
     },
@@ -44,7 +40,7 @@ export const Themes = [
         Emoji: "🌊",
         Colors: {
             Primary: "#0A2638",
-            Secondary: "white",
+            Secondary: "#FFFFFF",
             Accent: "#DECFAB",
         },
         Source: "https://wallpapercave.com/the-great-wave-off-kanagawa-hd-wallpapers",
