@@ -1,10 +1,10 @@
 .sidecard {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   align-items: center;
   text-align: center;
 
-  box-shadow: 5px 5px var(--shadow-color);
+  box-shadow: 5px 5px var(--accent-color);
 
   padding: 5%;
   margin-bottom: 2em;
@@ -12,7 +12,7 @@
 
 .placard-image {
   width: 90%;
-  box-shadow: 5px 5px var(--shadow-color);
+  box-shadow: 5px 5px var(--accent-color);
 }
 
 .placard-title {
@@ -40,7 +40,7 @@
 }
 
 .social a{
-  color: var(--text-color);
+  color: var(--secondary-color);
   font-size: 1em;
 }
 
@@ -50,17 +50,17 @@
 
 /* physical lines within cards */
 .liner {
-  border: 1px solid var(--shadow-color);
+  border: 1px solid var(--accent-color);
 }
 
 .social a:hover{
-  color: var(--shadow-color);
+  color: var(--accent-color);
 }
 
 #lang-switcher, #next-lang-emoji {
   padding: 0;
   border: 0;
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
 }
 
 #lang-switcher {
@@ -72,7 +72,7 @@
     position:sticky;
     top: 2em;
     width: 100%;
-    box-shadow: 10px 10px var(--shadow-color);
+    box-shadow: 10px 10px var(--accent-color);
   }
 
   .social a {

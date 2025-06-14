@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--shadow-color);
-  color: var(--background-color);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
   height: 10vh;
 
   padding: 3vh;
@@ -21,7 +21,7 @@
 
 .plain-jane,
 #bg-source {
-  color: var(--background-color) !important;
+  color: var(--primary-color) !important;
 }
 
 .plain-jane a:hover,

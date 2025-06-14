@@ -1,7 +1,7 @@
 .content-card {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  box-shadow: 10px 10px var(--shadow-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 10px 10px var(--accent-color);
   
   padding: 4vh;
   margin-bottom: 2em;
@@ -24,7 +24,7 @@
 }
 
 .content-card-content a {
-  color: var(--text-color);
+  color: var(--secondary-color);
   font-weight: 600;
 }
 
@@ -46,12 +46,12 @@
 }
 
 .content-card a:hover {
-  color: var(--shadow-color);
+  color: var(--accent-color);
   border-radius: 0.25em;
   text-decoration: none;
   /*
-  color: var(--background-color); // previous iteration where text became bigger on hover
-  background-color: var(--text-color);
+  color: var(--primary-color); // previous iteration where text became bigger on hover
+  background-color: var(--secondary-color);
   font-weight: bold;
   padding: 0.25em;
   line-height: 1.4; //Background color overlaps text, so give it some space

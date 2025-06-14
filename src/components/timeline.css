@@ -1,11 +1,11 @@
 .timeline-item {
-    border-left: 0.25em solid var(--shadow-color);
+    border-left: 0.25em solid var(--accent-color);
     padding-left: 0.75em;
 }
 
 .duration {
-    background-color: var(--shadow-color);
-    color: var(--background-color) !important;
+    background-color: var(--accent-color);
+    color: var(--primary-color) !important;
     padding: 0.5em;
     font-size: 0.7em;
     font-weight: bolder;
@@ -50,7 +50,7 @@
   .timeline-item {
     border-left: 0;
     padding-left: 0;
-    border-right: 0.25em solid var(--shadow-color);
+    border-right: 0.25em solid var(--accent-color);
     padding-right: 0.75em;
   }
 

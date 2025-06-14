@@ -21,7 +21,7 @@ export const Content = () => {
   var talkLinkFarm = [];
   Talks.PreviousTalks.forEach((talk) => {
     var talkLinks = [[
-      {text: <span>- <IoIosLink /></span>, link: talk.URLs.Primary, hover_text: "Link"},
+      {text: <span> <IoIosLink /></span>, link: talk.URLs.Primary, hover_text: "Link"},
       {text: <span> <FaYoutube /></span>, link: talk.URLs.Video, hover_text: "Video"},
       {text: <span> <RiSlideshowFill /></span>, link: talk.URLs.Slides, hover_text:"Slides"}
     ]];

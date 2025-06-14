@@ -46,49 +46,33 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: var(--background-color); 
+    background: var(--primary-color); 
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--shadow-color); 
+    background: var(--accent-color); 
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--text-color); 
+    background: var(--secondary-color); 
   }
 }
 
 /* Themes - name must match - only include background images here */
-.sakura{
+.spring {
   --background-image: url('./images/sakura.jpg');
 }
 
-.waves{
-  --background-image: url('./images/Waves.jpg');
-}
-
-.train{
-  --background-image: url('./images/train.jpeg');
-}
-
-.mountain{
-  --background-image: url('./images/mountains.jpeg');
-}
-
-.beach{
+.summer {
   --background-image: url('./images/beach.jpeg');
 }
 
-.snow{
-  --background-image: url('./images/snow.jpeg');
+.fall {
+  --background-image: url('./images/arashiyama.jpg');
 }
 
-.plant{
-  --background-image: url('./images/plant.jpeg');
-}
-
-.palm {
-  --background-image: url('./images/palm.png');
+.winter {
+  --background-image: url('./images/Waves.jpg');
 }
 
 :root {

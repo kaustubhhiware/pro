@@ -4,16 +4,16 @@ const changeTheme = (theme, nextTheme) => {
   document.getElementById('superset').className = theme.Name;
 
   // change current theme colors
-  document.documentElement.style.setProperty('--background-color', theme.Colors.BG);
-  document.documentElement.style.setProperty('--text-color', theme.Colors.Text);
-  document.documentElement.style.setProperty('--shadow-color', theme.Colors.Shadow);
+  document.documentElement.style.setProperty('--primary-color', theme.Colors.Primary);
+  document.documentElement.style.setProperty('--secondary-color', theme.Colors.Secondary);
+  document.documentElement.style.setProperty('--accent-color', theme.Colors.Accent);
   // update source in footer
   document.getElementById("bg-source").href = theme.Source; 
 
   // update themer button
-  document.documentElement.style.setProperty('--next-background-color', nextTheme.Colors.BG);
-  document.documentElement.style.setProperty('--next-text-color', nextTheme.Colors.Text);
-  document.documentElement.style.setProperty('--next-shadow-color', nextTheme.Colors.Shadow);
+  document.documentElement.style.setProperty('--next-primary-color', nextTheme.Colors.Primary);
+  document.documentElement.style.setProperty('--next-secondary-color', nextTheme.Colors.Secondary);
+  document.documentElement.style.setProperty('--next-accent-color', nextTheme.Colors.Accent);
   document.getElementById('themoji').innerHTML = nextTheme.Emoji;
 }
 
