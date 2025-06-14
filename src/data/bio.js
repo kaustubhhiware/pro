@@ -8,18 +8,18 @@ export const Bio = {
             Emoji: "🇬🇧",
         },
         {
-            Lang: "Japanese",
-            Name: "ヒワレ　コサトバ",
-            Emoji: "🇯🇵",
-        },
-        {
             Lang: "Hindi",
             Name: "कौस्तुभ हिवरे",
             Emoji: "🇮🇳",
+        },
+        {
+            Lang: "Japanese",
+            Name: "ヒワレ　コサトバ",
+            Emoji: "🇯🇵",
         }
     ],
     Role: "Software Engineer",
-    Location: "Mercari JP",
+    Location: "Tokyo",
     URLs: {
         Twitter: "https://twitter.com/_ofkaus",
         LinkedIn: "https://www.linkedin.com/in/ofkaus/",
@@ -30,7 +30,7 @@ export const Bio = {
         Podcast: "https://techculturepodcast.com",
     },
     Intro: [
-        "I'm a Senior Software Engineer at Mercari JP with an interest in product SaaS businesses.\n",
+        "I'm a Senior Software Engineer at Mercari with an interest in product SaaS businesses.\n",
         "In free time, I go on roadtrips around Japan and take pictures. I find humor in all things.\n", 
         // "I used to talk about SaaS business on ",
     ],

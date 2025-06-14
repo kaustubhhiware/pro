@@ -8,7 +8,7 @@ import Bio from '../data/bio';
 
 const renderTooltip = (props) => (
   <Tooltip id="theme-tooltip" {...props}>
-    Easter egg! (3/3)
+    Easter egg! (3/5)
   </Tooltip>
 );
 
