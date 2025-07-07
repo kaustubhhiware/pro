@@ -63,6 +63,29 @@ export const Content = () => {
       </div>
     </div>
 
+    {/* Talks */}
+    <div className="content-card glitch" id="talks">
+      <div className="content-card-title">
+        Talks
+      </div>
+      <div className="content-card-content">
+        {Talks.TalkIntro} <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="."/>.
+        <hr className="breather" />
+        {Talks.PreviousTalks.map((talk, index) => (
+          <Timeline
+            When={talk.When}
+            Title={talk.Title}
+            TitleSupplementaryLinks={talkLinkFarm[index]}
+            Subtitle={"at " + talk.Venue}
+            SubtitleLink={talk.URLs.Venue}
+            DescriptionLine={talk.Description}
+            Description={[]}
+            key={talk.Title}
+          />
+          ))}
+      </div>
+    </div>
+
     {/* Publications */}
     <div className="content-card glitch" id="publications">
       <div className="content-card-title">
@@ -84,29 +107,6 @@ export const Content = () => {
         Fun fact: I have an&nbsp;
         <PossiblyEmptyLink href={Bio.Erdos.URL} text="Erdős" alt_text="."/>
         &nbsp;number of {Bio.Erdos.Number}.
-      </div>
-    </div>
-
-    {/* Talks */}
-    <div className="content-card glitch" id="talks">
-      <div className="content-card-title">
-        Talks
-      </div>
-      <div className="content-card-content">
-        {Talks.TalkIntro} <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="."/>.
-        <hr className="breather" />
-        {Talks.PreviousTalks.map((talk, index) => (
-          <Timeline
-            When={talk.When}
-            Title={talk.Title}
-            TitleSupplementaryLinks={talkLinkFarm[index]}
-            Subtitle={"at " + talk.Venue}
-            SubtitleLink={talk.URLs.Venue}
-            DescriptionLine={talk.Description}
-            Description={[]}
-            key={talk.Title}
-          />
-          ))}
       </div>
     </div>
 
