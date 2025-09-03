@@ -1,6 +1,4 @@
 import React from 'react';
-import preloadergif from './images/quote.gif';
-import { CustomPreloader } from 'react-preloaders';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactGA from 'react-ga4';
@@ -41,11 +39,6 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <CustomPreloader time={1200}>
-        {/* <CustomPreloader time={0}> */}
-          <img src={preloadergif} alt="" className="preloader" />
-        </CustomPreloader>
-
         <Container fluid className="contain">
           <Row id="superset">
               <Placard/>
