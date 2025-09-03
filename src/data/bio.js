@@ -32,9 +32,7 @@ export const Bio = {
     Intro: [
         "I'm a Senior Software Engineer at Mercari with an interest in product SaaS businesses.\n",
         "In free time, I go on roadtrips around Japan and take pictures. I find humor in all things.\n", 
-        // "I used to talk about SaaS business on ",
     ],
-    PodcastName: "Tech Culture Podcast",
     Erdos: {
         Number: "4",
         URL: "https://www.csauthors.net/distance/paul-erdos/kaustubh-hiware",

@@ -4,7 +4,7 @@ Images need to be in public folder
 export const Work = [
     {
         When: "Oct 2021 - Present",
-        Role: "Senior Software Engineer, Business Partner Product",
+        Role: "Senior Software Engineer, Search / Product Data",
         Company: {
             Name: "Mercari Japan",
             Logo: "/images/mercari.png",

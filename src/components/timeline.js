@@ -8,12 +8,12 @@ export class Timeline extends React.Component {
   /*
   When
   Role => Title / TitleLink
-  TitleSupplementaryLinks - array of links
+  SupplementaryLinks - array of links
   Company => Subtitle
   Description (list) / DescriptionLine
   */
   render() {
-    var supplements = this.props.TitleSupplementaryLinks || [];
+    var supplements = this.props.SupplementaryLinks || [];
     return (
       <div className="timeline-item">
         <span className="duration">
@@ -32,16 +32,6 @@ export class Timeline extends React.Component {
                 text={this.props.Title}
                 href={this.props.TitleLink}
                 alt_text={this.props.Title} />
-              
-              {supplements.map( (supplement, index) => (
-                <PossiblyEmptyLink
-                  text={supplement.text}
-                  href={supplement.link}
-                  alt_text=""
-                  is_icon={true}
-                  hover_text={supplement.hover_text}
-                  key={index} />
-              ))}
             </div>
 
             <div className="timeline-subtitle">
@@ -49,6 +39,15 @@ export class Timeline extends React.Component {
                 text={this.props.Subtitle}
                 href={this.props.SubtitleLink}
                 alt_text={this.props.Subtitle} />
+                {supplements.map( (supplement, index) => (
+                  <PossiblyEmptyLink
+                    text={supplement.text}
+                    href={supplement.link}
+                    alt_text=""
+                    is_icon={true}
+                    hover_text={supplement.hover_text}
+                    key={index} />
+                ))}
             </div>
 
             <div className="timeline-description">

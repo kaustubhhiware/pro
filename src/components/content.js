@@ -2,7 +2,6 @@ import React from "react";
 import './content.css';
 import './base.css';
 import { Col } from 'react-bootstrap';
-import { IoIosLink } from "react-icons/io";
 import { FaYoutube } from 'react-icons/fa';
 import { RiSlideshowFill } from "react-icons/ri";
 
@@ -21,7 +20,6 @@ export const Content = () => {
   var talkLinkFarm = [];
   Talks.PreviousTalks.forEach((talk) => {
     var talkLinks = [[
-      {text: <span> <IoIosLink /></span>, link: talk.URLs.Primary, hover_text: "Link"},
       {text: <span> <FaYoutube /></span>, link: talk.URLs.Video, hover_text: "Video"},
       {text: <span> <RiSlideshowFill /></span>, link: talk.URLs.Slides, hover_text:"Slides"}
     ]];
@@ -39,7 +37,6 @@ export const Content = () => {
       </div>
       <div className="content-card-content" id="intro-content">
         {Bio.Intro}
-        {/* <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="." />. */}
       </div>
     </div>
 
@@ -69,15 +66,13 @@ export const Content = () => {
         Talks
       </div>
       <div className="content-card-content">
-        {Talks.TalkIntro} <PossiblyEmptyLink href={Bio.URLs.Podcast} text={Bio.PodcastName} alt_text="."/>.
-        <hr className="breather" />
         {Talks.PreviousTalks.map((talk, index) => (
           <Timeline
             When={talk.When}
-            Title={talk.Title}
-            TitleSupplementaryLinks={talkLinkFarm[index]}
-            Subtitle={"at " + talk.Venue}
-            SubtitleLink={talk.URLs.Venue}
+            Title={(talk.Type ? `${Talks.TypeEmojiMap[talk.Type] || ''} ` : '') + talk.Title}
+            TitleLink={talk.URLs.Primary}
+            Subtitle={talk.Venue}
+            SupplementaryLinks={talkLinkFarm[index]}
             DescriptionLine={talk.Description}
             Description={[]}
             key={talk.Title}
