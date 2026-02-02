@@ -50,7 +50,7 @@ export const Themer = () => {
         overlay={renderTooltip}>
           <button id="themer" onClick={ToggleThemesWrapper}>
             <span role="img" aria-label="theme-switcher" id="themoji">
-              {Themes[circularIncrement(parseInt(ThemeDefault))].Emoji}
+              {Themes[circularIncrement(parseInt(ThemeDefault), Themes.length)].Emoji}
             </span>
           </button>
         </OverlayTrigger>
