@@ -51,4 +51,4 @@ export const Themes = [
 
 
 export default Themes;
-export const ThemeDefault = "2";
+export const ThemeDefault = "3";
