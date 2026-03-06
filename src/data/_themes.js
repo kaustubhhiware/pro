@@ -51,4 +51,12 @@ export const Themes = [
 
 
 export default Themes;
-export const ThemeDefault = "3";
+
+// theme default uses current month to identify what the default theme should be
+const _month = new Date().getMonth() + 1; // 1-12
+export const ThemeDefault = String(
+    _month >= 3 && _month <= 5 ? 0 :  // spring: Mar-May
+    _month >= 6 && _month <= 9 ? 1 :  // summer: Jun-Sep
+    _month >= 10              ? 2 :  // fall: Oct-Dec
+                                3    // winter: Jan-Feb
+);
