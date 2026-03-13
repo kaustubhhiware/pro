@@ -33,7 +33,7 @@ export const Content = () => {
     {/* Intro */}
     <div className="content-card glitch" id="intro">
       <div className="content-card-title">
-        Hello, I'm {Bio.FirstName}! 👋
+        Hello, I'm {Bio.FirstName}! <span className="wave">👋</span>
       </div>
       <div className="content-card-content" id="intro-content">
         {Bio.Intro}
