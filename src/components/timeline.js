@@ -7,6 +7,7 @@ import { Row, Col } from 'react-bootstrap';
 export class Timeline extends React.Component {
   /*
   When
+  Emoji => appears before title
   Role => Title / TitleLink
   SupplementaryLinks - array of links
   Company => Subtitle
@@ -28,6 +29,7 @@ export class Timeline extends React.Component {
           </Col>}
           <Col md={9} lg={10} className="timeline-content-column">
             <div className="timeline-title">
+              {this.props.Emoji}
               <PossiblyEmptyLink
                 text={this.props.Title}
                 href={this.props.TitleLink}

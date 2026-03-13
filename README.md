@@ -1,28 +1,26 @@
 # pro
-Professional website, no gimmicks - kaustubhhiware.in
 
-ToDo: Make gimmicky website
+Professional website - kaustubhhiware.in
 
-I have tried to keep most things customizable - for most parts.
+I have kept every information customizable.
 
 * Custom themes
 * Switch language for your name (maybe extend to whole site? Too much?)
 
-### Credits
-
-Color palettes have been provided by [u/marinemotion](https://www.reddit.com/user/marinemotion/)
-
 ## Development
 
-```
+```sh
 make start
 ```
 
 ## Building the pages
 
-The solution is hacky, but it works.
-The repository serves the `docs` folder, there are no docs - sorry.
+The repository serves the `docs` folder.
 
 ```sh
 make build # contains custom domain
 ```
+
+## Credits
+
+Color palettes have been provided by [u/marinemotion](https://www.reddit.com/user/marinemotion/)

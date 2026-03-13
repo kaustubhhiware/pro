@@ -69,7 +69,8 @@ export const Content = () => {
         {Talks.PreviousTalks.map((talk, index) => (
           <Timeline
             When={talk.When}
-            Title={(talk.Type ? `${Talks.TypeEmojiMap[talk.Type] || ''} ` : '') + talk.Title}
+            Emoji={(talk.Type ? `${Talks.TypeEmojiMap[talk.Type] || ''} ` : '')}
+            Title={talk.Title}
             TitleLink={talk.URLs.Primary}
             Subtitle={talk.Venue}
             SupplementaryLinks={talkLinkFarm[index]}

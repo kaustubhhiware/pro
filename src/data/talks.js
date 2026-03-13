@@ -18,9 +18,8 @@ export const Talks = {
             Description: "Practices and processes that build resilience in systems and teams, operating across borders - technical, organizational or cultural.",
             URLs: {
                 Primary: "https://techsummit.io/breakout-sessions/#summary6",
-                // https://www.linkedin.com/feed/update/urn:li:activity:7368206762501455872/
-                // Video: "TBD",
-                // Slides: "TBD",
+                Video: "https://youtu.be/g8xNcwgOOSg",
+                Slides: "https://docs.google.com/presentation/d/1jbnj-h2y2LewPArvQEdkZJm0w-dJNycxWgztZ7yVP9U/edit?usp=sharing",
             }
         },
         {
