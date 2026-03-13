@@ -45,7 +45,6 @@
 
 .placard-location {
   margin-top: 0.25em;
-  font-weight: bold;
 }
 @media (min-width: 1280px) {
   .placard-location {
