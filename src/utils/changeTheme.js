@@ -10,6 +10,9 @@ const changeTheme = (theme, nextTheme) => {
   // update source in footer
   document.getElementById("bg-source").href = theme.Source; 
 
+  // update browser theme-color meta tag
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', theme.Colors.Primary);
+
   // update themer button
   document.documentElement.style.setProperty('--next-primary-color', nextTheme.Colors.Primary);
   document.documentElement.style.setProperty('--next-secondary-color', nextTheme.Colors.Secondary);

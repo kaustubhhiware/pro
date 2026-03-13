@@ -11,7 +11,7 @@ export const Themes = [
         Colors: {
             Primary: "#F5E8ED",
             Secondary: "#800000",
-            Accent: "#E83261",
+            Accent: "#DD3D66",
         },
         Source: "https://unsplash.com/photos/bBWHtMOvxKY",
     },
@@ -40,7 +40,7 @@ export const Themes = [
         Emoji: "🌊",
         Colors: {
             Primary: "#0A2638",
-            Secondary: "#FFFFFF",
+            Secondary: "#F8FAFC",
             Accent: "#DECFAB",
         },
         Source: "https://wallpapercave.com/the-great-wave-off-kanagawa-hd-wallpapers",

@@ -17,11 +17,12 @@
 }
 
 .love {
-  color: #B91C1C; /* Blood red */
+  margin-top: -10px;
+  color: var(--secondary-color);
 }
 
-.love a:hover {
-  color: #B91C1C; /* Blood red */
+.love:hover {
+  color: var(--primary-color);
 }
 
 .plain-jane,
