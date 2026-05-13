@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './content.css';
 import './base.css';
 import { Col } from 'react-bootstrap';
@@ -17,14 +17,14 @@ import Education from '../data/education';
 
 export const Content = () => {
   // somewhat complex object, so formatting earlier on
-  var talkLinkFarm = [];
+  var talkLinkFarm = {};
   Talks.PreviousTalks.forEach((talk) => {
-    var talkLinks = [[
+    talkLinkFarm[talk.Title] = [[
       {text: <span> <FaYoutube /></span>, link: talk.URLs.Video, hover_text: "Video"},
       {text: <span> <RiSlideshowFill /></span>, link: talk.URLs.Slides, hover_text:"Slides"}
     ]];
-    talkLinkFarm = talkLinkFarm.concat(talkLinks);
   });
+  const [talkFilter, setTalkFilter] = useState(null);
 
   return (
     <Col lg={12} xl={9}>
@@ -71,14 +71,28 @@ export const Content = () => {
         </p>
         <hr class="breather"/>
 
-        {Talks.PreviousTalks.map((talk, index) => (
+        <div className="talk-filters">
+          <button
+            className={`talk-filter-btn${talkFilter === null ? ' active' : ''}`}
+            onClick={() => setTalkFilter(null)}
+          >All [{Talks.PreviousTalks.length}]</button>
+          {Object.entries(Talks.TypeEmojiMap).map(([type, emoji]) => (
+            <button
+              key={type}
+              className={`talk-filter-btn${talkFilter === type ? ' active' : ''}`}
+              onClick={() => setTalkFilter(type)}
+            >{emoji} {type} [{Talks.PreviousTalks.filter(t => t.Type === type).length}]</button>
+          ))}
+        </div>
+
+        {Talks.PreviousTalks.filter(talk => talkFilter === null || talk.Type === talkFilter).map((talk) => (
           <Timeline
             When={talk.When}
             Emoji={(talk.Type ? `${Talks.TypeEmojiMap[talk.Type] || ''} ` : '')}
             Title={talk.Title}
             TitleLink={talk.URLs.Primary}
             Subtitle={talk.Venue}
-            SupplementaryLinks={talkLinkFarm[index]}
+            SupplementaryLinks={talkLinkFarm[talk.Title]}
             DescriptionLine={talk.Description}
             Description={[]}
             key={talk.Title}
