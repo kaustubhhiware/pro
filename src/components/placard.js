@@ -59,7 +59,6 @@ export const Placard = () => {
     <div className="placard-location">
       {Bio.Location}
     </div>
-    
     <hr className="liner" />
 
     <div className="social">
@@ -69,9 +68,6 @@ export const Placard = () => {
     <a href={Bio.URLs.LinkedIn} rel="noopener noreferrer" target="_blank">
       <FaLinkedinIn />
     </a>
-    {/* <a href={Bio.URLs.Instagram} rel="noopener noreferrer" target="_blank">
-      <FaInstagram />
-    </a> */}
     <a href={Bio.URLs.Github} rel="noopener noreferrer" target="_blank">
       <FaGithub />
     </a>

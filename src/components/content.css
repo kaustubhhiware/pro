@@ -80,6 +80,12 @@
   }
 }
 
+/* small gap line*/
+.breather {
+  border-bottom-color: color-mix(in srgb, currentColor 20%, transparent);
+  padding-bottom: 0.5em;
+}
+
 @keyframes wave {
   0%   { transform: rotate(  0deg); }
   15%  { transform: rotate( 14deg); }

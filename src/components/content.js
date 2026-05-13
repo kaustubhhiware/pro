@@ -66,6 +66,11 @@ export const Content = () => {
         Talks
       </div>
       <div className="content-card-content">
+        <p>
+          As a speaker, I strive for a balance between information and entertainment. Infotainment, if you will.
+        </p>
+        <hr class="breather"/>
+
         {Talks.PreviousTalks.map((talk, index) => (
           <Timeline
             When={talk.When}
@@ -88,6 +93,12 @@ export const Content = () => {
         Publications
       </div>
       <div className="content-card-content">
+        <p>Fun fact: I have an&nbsp;
+        <PossiblyEmptyLink href={Bio.Erdos.URL} text="Erdős" alt_text="."/>
+        &nbsp;number of {Bio.Erdos.Number}.
+        </p>
+        <hr class="breather"/>
+
         {Papers.map((paper) => (
           <Timeline
             When={paper.When}
@@ -99,10 +110,6 @@ export const Content = () => {
             key={paper.Title}
           />
         ))}
-
-        Fun fact: I have an&nbsp;
-        <PossiblyEmptyLink href={Bio.Erdos.URL} text="Erdős" alt_text="."/>
-        &nbsp;number of {Bio.Erdos.Number}.
       </div>
     </div>
 
