@@ -11,6 +11,18 @@ export const Talks = {
     },
     PreviousTalks: [
         {
+            Title: "Agent Skills for end-to-end Full-Stack Development",
+            Venue: "Tokyo AI",
+            When: "May 2026",
+            Type: "Conference",
+            Description: "Using agent skills to have a systematic, repeatable approach to agentic programming, embedding domain knowledge when creating skills, and creating self-improving memory patterns.",
+            URLs: {
+                Primary: "https://luma.com/zn7pp9rj",
+                // Video: "not available yet"
+                Slides: "https://github.com/kaustubhhiware/agent-skills-fullstack-development/blob/main/Agent%20Skills%20for%20full-stack%20development.pdf",
+            }
+        },
+        {
             Title: "Shipping Through Chaos: Engineering Resilience Across Borders",
             Venue: "Techsummit.io, Amsterdam",
             When: "Sep 2025",
