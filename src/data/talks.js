@@ -11,6 +11,17 @@ export const Talks = {
     },
     PreviousTalks: [
         {
+            Title: "Public Speaking for Developers",
+            Venue: "Mercari / MeltingHack",
+            When: "Jun 2026",
+            Type: "Training",
+            Description: "Organized and delivered a public speaking workshop for 50 developers, covering technical presentation techniques and practical storytelling. The event culminated in an interactive 3-minute pitch session, where I coached attendees through their first public speaking experience.",
+            URLs: {
+                Primary: "https://www.linkedin.com/feed/update/urn:li:activity:7473670478176444416/",
+                Slides: "https://kaustubhhiware.github.io/public-speaking-for-developers/?utm_source=resume",
+            }
+        },
+        {
             Title: "Agent Skills for end-to-end Full-Stack Development",
             Venue: "Tokyo AI",
             When: "May 2026",
@@ -18,7 +29,6 @@ export const Talks = {
             Description: "Using agent skills to have a systematic, repeatable approach to agentic programming, embedding domain knowledge when creating skills, and creating self-improving memory patterns.",
             URLs: {
                 Primary: "https://luma.com/zn7pp9rj",
-                // Video: "not available yet"
                 Slides: "https://github.com/kaustubhhiware/agent-skills-fullstack-development/blob/main/Agent%20Skills%20for%20full-stack%20development.pdf",
             }
         },
